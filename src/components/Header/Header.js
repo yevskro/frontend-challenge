@@ -10,9 +10,7 @@ function Header(){
 const Image = styled.img`
   height: 156px;
   background-color: #5DA5A4;
-  @media (min-width: 375px) {
-    content: url('/assets/images/bg-header-mobile.svg');
-  }
+  content: url('/assets/images/bg-header-mobile.svg');
   @media (min-width: 376px) {
     content: url('/assets/images/bg-header-desktop.svg');
   }
