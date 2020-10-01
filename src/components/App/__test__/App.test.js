@@ -1,9 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from './App';
+import App from '../App';
+import '@testing-library/jest-dom/extend-expect';
 
 test('renders without crashing', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const { getByRole } = render(<App />);
+  const appElement = getByRole("app");
+  expect(appElement).toBeInTheDocument();
 });
