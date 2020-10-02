@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Filters from '../Filters/Filters';
 import Filter from '../Filter/Filter';
+import JobList from '../JobList/JobList';
+import Job from '../Job/Job';
 
 function Jobs(){
   return <StyledJobs role='main'>
@@ -13,9 +15,11 @@ function Jobs(){
       </Filters>
       <ClearButton role='button'/>
     </Search>
-    <Job/>
-    <Job/>
-    <Job/>
+    <JobList>
+      <Job featured={true}/>
+      <Job featured={true}/>
+      <Job/>
+    </JobList>
   </StyledJobs>
 }
 
@@ -25,6 +29,11 @@ const StyledJobs = styled.section`
   left: 5%;
   right: 5%;
   top: 120px;
+  background: transparent;
+  @media (min-width: 401px) {
+    left: 11%;
+    right: 11%;
+  }
 `;
 
 const Search = styled.div`
@@ -48,12 +57,6 @@ const ClearButton = styled.button`
   color: #869290;
   border: 0;
   background-color: transparent;
-`;
-
-const Job = styled.div`
-  width: 100px;
-  height: 100px;
-  margin-top: 56px;
 `;
 
 export default Jobs;
