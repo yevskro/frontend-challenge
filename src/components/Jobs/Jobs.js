@@ -5,13 +5,13 @@ import Filter from '../Filter/Filter';
 
 function Jobs(){
   return <StyledJobs role='main'>
-    <Search>
+    <Search role='search'>
       <Filters>
         <Filter remove={true} value="Frontend"/>
         <Filter remove={true} value="CSS"/>
         <Filter remove={true} value="JavaScript"/>
       </Filters>
-      <Clear/>
+      <Clear role='button'/>
     </Search>
     <Job/>
     <Job/>
