@@ -17,7 +17,7 @@ function Jobs() {
           <Filter remove>CSS</Filter>
           <Filter remove>JavaScript</Filter>
         </Filters>
-        <ClearButton/>
+        <ClearButton />
       </Search>
       <JobList>
         <Job data={jobData[0]} />

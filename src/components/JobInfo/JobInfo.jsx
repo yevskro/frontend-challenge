@@ -11,7 +11,6 @@ function JobInfo({ postedAt, contract, location }) {
   );
 }
 
-
 const Info = styled.li`
   color: rgba(133, 139, 139, 0.75);
   margin-right: 5px;
