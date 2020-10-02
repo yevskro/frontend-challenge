@@ -9,7 +9,7 @@ import jobData from '../../data.json';
 
 function Jobs() {
   return (
-    <StyledJobs role='main'>
+    <StyledJobs role="main">
       <Search>
         <Filters>
           <Filter remove>Frontend</Filter>
@@ -34,7 +34,6 @@ function List({ children }) {
 const StyledList = styled.ul`
   margin-bottom: 150px;
 `;
-
 
 const StyledJobs = styled.section`
   position: absolute;

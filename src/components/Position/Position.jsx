@@ -6,7 +6,9 @@ import Company from '../Company/Company';
 function Position({ children, postedAt, contract, location, company }) {
   return (
     <StyledPosition>
-      <Company newly={company.newly} featured={company.featured}>{company.name}</Company>
+      <Company newly={company.newly} featured={company.featured}>
+        {company.name}
+      </Company>
       <Heading>{children}</Heading>
       <JobInfo postedAt={postedAt} contract={contract} location={location} />
     </StyledPosition>

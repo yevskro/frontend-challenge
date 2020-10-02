@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 function Header() {
   return (
-    <header role='presentation'>
+    <header role="presentation">
       <Image />
     </header>
   );

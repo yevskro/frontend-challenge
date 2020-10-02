@@ -13,7 +13,7 @@ test('renders without crashing', () => {
 test('renders children', () => {
   const { getByRole } = render(
     <Filters>
-      <Filter value='CSS' />
+      <Filter value="CSS" />
     </Filters>
   );
   const filterElement = getByRole('listitem');

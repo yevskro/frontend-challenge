@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 function ClearButton() {
-  return <StyledClearButton role='button' />;
+  return <StyledClearButton role="button" />;
 }
 
 const StyledClearButton = styled.button`

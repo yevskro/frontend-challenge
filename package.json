@@ -42,7 +42,8 @@
     "rules": {
       "react/prop-types": 0,
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-      "jsx-quotes": ["error", "prefer-single"]
+      "prettier/prettier": ["error", { "singleQuote": true, "semi": true, "printWidth": 80 }],
+      "quotes": ["error", "single"]
     }
   },
   "browserslist": {

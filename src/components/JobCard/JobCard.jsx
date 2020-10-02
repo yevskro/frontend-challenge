@@ -9,11 +9,16 @@ function JobCard({ data }) {
     <StyledJob featured={data.featured}>
       <Information>
         <Logo src={data.logo} />
-        <Position 
-          company={{name: data.company, newly: data.newly, featured: data.featured}} 
-          postedAt={data.postedAt} 
-          contract={data.contract} 
-          location={data.location}>
+        <Position
+          company={{
+            name: data.company,
+            newly: data.newly,
+            featured: data.featured,
+          }}
+          postedAt={data.postedAt}
+          contract={data.contract}
+          location={data.location}
+        >
           {data.position}
         </Position>
       </Information>
@@ -38,7 +43,7 @@ const JobFilters = styled.div`
 const HorizontalLine = styled.hr`
   border-top: 1px solid rgb(191, 193, 192, 0.75);
   margin: 0px 0px 4px 0px;
-  @media (min-width: 785px){
+  @media (min-width: 785px) {
     display: none;
   }
 `;
@@ -47,7 +52,7 @@ const Information = styled.div`
   padding: 32px 0px 0px 0px;
   display: flex;
   align-items: center;
-  @media (min-width: 491px){
+  @media (min-width: 491px) {
     padding-bottom: 20px;
     padding-left: 0px;
   }
@@ -61,11 +66,11 @@ const Logo = styled.img`
     0px,
     -80px
   ); /* take account of the border width of 5px from x */
-  @media (min-width: 491px){
+  @media (min-width: 491px) {
     width: 88px;
     height: 88px;
     position: relative;
-    transform: translate(0,0);
+    transform: translate(0, 0);
     margin-right: 24px;
   }
 `;
@@ -85,21 +90,21 @@ const StyledJob = styled.div`
   padding-left: 20px;
   padding-right: 24px;
 
-  @media (min-width: 550px){
+  @media (min-width: 550px) {
     display: flex;
     flex-direction: column;
     padding-top: 0px;
     font-size: 1em;
   }
 
-  @media (min-width: 785px){
+  @media (min-width: 785px) {
     display: flex;
     align-items: center;
     flex-direction: row;
     padding: 0px 24px 0px 24px;
   }
 
-  @media (min-width: 1000px){
+  @media (min-width: 1000px) {
     display: flex;
     align-items: center;
     flex-direction: row;

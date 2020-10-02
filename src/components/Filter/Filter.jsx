@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 function Filter({ children, remove }) {
   return (
-    <StyledFilter role='listitem button'>
+    <StyledFilter role="listitem button">
       <Text>{children}</Text>
       {remove ? (
         <Remove>
@@ -23,8 +23,8 @@ const StyledFilter = styled.li`
   align-items: center;
   background-color: #eaf3f2;
   margin: 10px 16px 10px 0px;
-  @media (min-width: 415px){
-      margin: 10px 0px 10px 16px;
+  @media (min-width: 415px) {
+    margin: 10px 0px 10px 16px;
   }
 `;
 

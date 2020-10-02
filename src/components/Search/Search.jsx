@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 function Search({ children }) {
-  return <StyledSearch role='search'>{children}</StyledSearch>;
+  return <StyledSearch role="search">{children}</StyledSearch>;
 }
 
 const StyledSearch = styled.div`

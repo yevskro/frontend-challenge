@@ -40,7 +40,7 @@ const StyledJobInfo = styled.ul`
   display: flex;
   list-style: none;
   margin-bottom: 15px;
-  @media (min-width: 491px){
+  @media (min-width: 491px) {
     margin-bottom: 0px;
   }
 `;

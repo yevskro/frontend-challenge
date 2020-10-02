@@ -4,13 +4,13 @@ import renderer from 'react-test-renderer';
 import Filter from '../Filter';
 
 test('renders without crashing', () => {
-  const { getByRole } = render(<Filter value='CSS' />);
+  const { getByRole } = render(<Filter value="CSS" />);
   const filterElement = getByRole('checkbox');
   expect(filterElement).toBeInTheDocument();
 });
 
 test('renders props', () => {
-  const { getByText } = render(<Filter value='CSS' />);
+  const { getByText } = render(<Filter value="CSS" />);
   const filterElement = getByText('CSS');
   expect(filterElement).toBeInTheDocument();
 });
