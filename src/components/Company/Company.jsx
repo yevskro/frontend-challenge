@@ -11,7 +11,7 @@ function Company({ children, newly, featured }) {
   );
 }
 
-const Status = styled.div`
+const Status = styled.span`
   line-height: 28px;
   vertical-align: middle;
   height: 24px;
