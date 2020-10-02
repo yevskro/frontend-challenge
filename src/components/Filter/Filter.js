@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 function Filter(props){
-  return <StyledFilter role='checkbox'>
+  return <StyledFilter role='listitem'>
     <Text>{props.value}</Text>
     {props.remove ? <Remove><RemoveIcon/></Remove> : ''}
   </StyledFilter>
