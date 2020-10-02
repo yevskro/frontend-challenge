@@ -11,7 +11,7 @@ function Jobs(){
         <Filter remove={true} value="CSS"/>
         <Filter remove={true} value="JavaScript"/>
       </Filters>
-      <Clear role='button'/>
+      <ClearButton role='button'/>
     </Search>
     <Job/>
     <Job/>
@@ -40,12 +40,14 @@ const Search = styled.div`
   font-weight: 600;
 `;
 
-const Clear = styled.span`
+const ClearButton = styled.button`
   text-align: center;
   &:after {
     content: 'Clear';
   }
   color: #869290;
+  border: 0;
+  background-color: transparent;
 `;
 
 const Job = styled.div`

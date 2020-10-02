@@ -5,7 +5,7 @@ import Filter from '../Filter';
 
 test('renders without crashing', () => {
   const { getByRole } = render(<Filter value='CSS'/>);
-  const filterElement = getByRole('listitem');
+  const filterElement = getByRole('checkbox');
   expect(filterElement).toBeInTheDocument();
 });
 
