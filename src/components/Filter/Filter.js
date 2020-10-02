@@ -2,13 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 function Filter(props){
-  return <StyledFilter>
+  return <StyledFilter role='listitem'>
     <Text>{props.value}</Text>
     {props.remove ? <Remove><RemoveIcon/></Remove> : ''}
   </StyledFilter>
 }
 
-const StyledFilter = styled.div`
+const StyledFilter = styled.li`
   height: 32px;
   display: flex;
   justify-content: center;
