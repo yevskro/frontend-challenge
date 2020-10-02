@@ -23,7 +23,9 @@ const StyledFilter = styled.li`
   align-items: center;
   background-color: #eaf3f2;
   margin: 10px 16px 10px 0px;
-  border-radius: 5px;
+  @media (min-width: 415px){
+      margin: 10px 0px 10px 16px;
+  }
 `;
 
 const Text = styled.span`
