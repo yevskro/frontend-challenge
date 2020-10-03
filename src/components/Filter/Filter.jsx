@@ -21,7 +21,8 @@ const StyledFilter = styled.li`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #eaf3f2;
+  background-color: ${({ theme }) =>
+    theme.color.neutral.lightGrayishCyanFilterTablets};
   margin: 10px 16px 10px 0px;
   @media (min-width: 415px) {
     margin: 10px 0px 10px 16px;
@@ -30,13 +31,15 @@ const StyledFilter = styled.li`
 
 const Text = styled.span`
   padding: 0px 9px 0px 8px;
-  color: #5eaaa6;
+  color: ${({ theme }) => theme.color.primary.desaturtedDarkCyan};
+  font-size: ${({ theme }) => theme.fontSize.small};
+  font-weight: ${({ theme }) => theme.fontWeight.bold};
 `;
 
 const Remove = styled.div`
   width: 32px;
   height: 32px;
-  background-color: #5da5a4;
+  background-color: ${({ theme }) => theme.color.primary.desaturtedDarkCyan};
   display: flex;
   justify-content: center;
   align-items: center;

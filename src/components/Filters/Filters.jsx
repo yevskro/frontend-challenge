@@ -14,9 +14,6 @@ const StyledFilters = styled.ul`
   flex-wrap: wrap;
   width: 100%;
   justify-content: ${(props) => (props.flexEnd ? 'flex-end' : 'flex-start')};
-  @media (min-width: 1000px) {
-    flex-wrap: nowrap;
-  }
   @media (max-width: 415px) {
     justify-content: flex-start;
   }

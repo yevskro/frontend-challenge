@@ -9,10 +9,9 @@ const StyledClearButton = styled.button`
   text-align: center;
   &:after {
     content: 'Clear';
+    font-size: ${({ theme }) => theme.fontSize.medium};
   }
-  color: #869290;
-  border: 0;
-  background-color: transparent;
+  color: ${({ theme }) => theme.color.neutral.darkGrayishCyan}; /*#869290;*/
 `;
 
 export default ClearButton;
