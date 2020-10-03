@@ -12,10 +12,7 @@ const StyledSearch = styled.div`
   border-radius: 5px;
   background-color: #fff;
   justify-content: space-between;
-  box-shadow: 0px 10px 10px RGBA(94, 140, 160, 0.15);
-  font-family: Spartan;
-  font-size: 13px;
-  font-weight: 600;
+  box-shadow: 0px 10px 10px ${({ theme }) => theme.color.shadow};
   margin-bottom: 56px;
 `;
 
