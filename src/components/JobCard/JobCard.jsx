@@ -8,7 +8,7 @@ function JobCard({ data }) {
   return (
     <StyledJob featured={data.featured}>
       <Information>
-        <Logo src={data.logo} />
+        <Logo src={data.logo} alt="company logo" />
         <Position
           company={{
             name: data.company,
@@ -37,11 +37,13 @@ function JobCard({ data }) {
 
 const JobFilters = styled.div`
   display: flex;
+  align-items: center;
   margin-left: auto;
 `;
 
 const HorizontalLine = styled.hr`
-  border-top: 1px solid rgb(191, 193, 192, 0.75);
+  border-top: 1px solid ${({ theme }) => theme.color.neutral.darkGrayishCyan};
+  opacity: 0.5;
   margin: 0px 0px 4px 0px;
   @media (min-width: 785px) {
     display: none;
@@ -49,11 +51,11 @@ const HorizontalLine = styled.hr`
 `;
 
 const Information = styled.div`
-  padding: 32px 0px 0px 0px;
   display: flex;
   align-items: center;
-  @media (min-width: 491px) {
-    padding-bottom: 20px;
+  padding-bottom: 10px;
+  @media (min-width: 785px) {
+    padding-bottom: 0px;
     padding-left: 0px;
   }
 `;
@@ -64,9 +66,9 @@ const Logo = styled.img`
   position: absolute;
   transform: translate(
     0px,
-    -80px
+    -86px
   ); /* take account of the border width of 5px from x */
-  @media (min-width: 491px) {
+  @media (min-width: 555px) {
     width: 88px;
     height: 88px;
     position: relative;
@@ -78,37 +80,33 @@ const Logo = styled.img`
 const StyledJob = styled.div`
   box-sizing: border-box;
   border-radius: 5px;
-  border-left: 5px solid ${(props) => (props.featured ? '#5BA6A2' : '#FFF')};
-  background-color: #fff;
-  box-shadow: 0px 10px 10px RGBA(94, 140, 160, 0.15);
-  font-family: Spartan;
-  font-size: 13px;
-  font-weight: 600;
+  border-left: 5px solid
+    ${(props) =>
+      props.featured ? props.theme.color.primary.desaturtedDarkCyan : 'white'};
+  background-color: white;
+  box-shadow: 0px 10px 10px ${({ theme }) => theme.color.shadow};
   margin-top: 40px;
   width: 100%;
   padding-bottom: 14px;
   padding-left: 20px;
   padding-right: 24px;
+  padding-top: 44px;
 
-  @media (min-width: 550px) {
+  @media (min-width: 555px) {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
-    padding-top: 0px;
-    font-size: 1em;
   }
 
   @media (min-width: 785px) {
     display: flex;
     align-items: center;
     flex-direction: row;
-    padding: 0px 24px 0px 24px;
+    padding: 24px 24px 24px 24px;
   }
 
-  @media (min-width: 1000px) {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    padding: 0px 48px 0px 24px;
+  @media (min-width: 900px) {
+    padding: 30px 48px 30px 48px;
   }
 `;
 
