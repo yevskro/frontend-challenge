@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import SearchButton from '../SearchButton/SearchButton';
+import SearchButton from '../SearchButton';
 
 function Search({ children }) {
   return (

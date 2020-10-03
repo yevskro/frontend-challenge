@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import renderer from 'react-test-renderer';
-import SearchFilter from '../SearchFilter';
+import SearchFilter from '..';
 
 test('renders without crashing', () => {
   const { getByRole } = render(<SearchFilter value="CSS" />);

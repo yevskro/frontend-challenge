@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import Search from '../Search/Search';
-import Job from '../Job/Job';
+import Search from '../Search';
+import Job from '../Job';
 import jobData from '../../data.json';
-import SearchFilters from '../SearchFilters/SearchFilters';
-import SearchFilter from '../SearchFilter/SearchFilter';
+import SearchFilters from '../SearchFilters';
+import SearchFilter from '../SearchFilter';
 
 function Jobs() {
   return (

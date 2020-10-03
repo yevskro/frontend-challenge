@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import renderer from 'react-test-renderer';
-import SearchFilters from '../SearchFilters';
-import SearchFilter from '../../SearchFilter/SearchFilter';
+import SearchFilters from '..';
+import SearchFilter from '../../SearchFilter';
 
 test('renders without crashing', () => {
   const { getByRole } = render(<SearchFilters />);

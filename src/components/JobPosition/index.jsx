@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import JobInfo from '../JobInfo/JobInfo';
-import JobCompany from '../JobCompany/JobCompany';
+import JobInfo from '../JobInfo';
+import JobCompany from '../JobCompany';
 
 function JobPosition({ children, postedAt, contract, location, company }) {
   return (

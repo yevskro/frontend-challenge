@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import renderer from 'react-test-renderer';
-import Header from '../Header';
+import Header from '..';
 
 test('renders without crashing', () => {
   const { getByRole } = render(<Header />);
