@@ -4,7 +4,7 @@ import styled from 'styled-components';
 function JobCompany({ children, newly, featured }) {
   return (
     <StyledJobCompany>
-      {children}
+      <span>{children}</span>
       {newly ? <Newly /> : ''}
       {featured ? <Featured /> : ''}
     </StyledJobCompany>

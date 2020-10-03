@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import JobPosition from '../JobPosition/JobPosition';
-import SearchFilters from '../SearchFilters/SearchFilters';
-import SearchFilter from '../SearchFilter/SearchFilter';
+import JobPosition from '../JobPosition';
+import SearchFilters from '../SearchFilters';
+import SearchFilter from '../SearchFilter';
 
 function Job({ data }) {
   return (
-    <StyledJob featured={data.featured}>
+    <StyledJob featured={data.featured} role="contentinfo listitem">
       <JobInformation>
         <CompanyLogo src={data.logo} alt="company logo" />
         <JobPosition

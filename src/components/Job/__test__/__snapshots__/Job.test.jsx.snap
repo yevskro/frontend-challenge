@@ -1,0 +1,364 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+.c7 {
+  white-space: nowrap;
+}
+
+.c7:first-child::before {
+  font-size: 1.7rem;
+  content: ' ';
+}
+
+.c7:not(:first-child)::before {
+  content: '.';
+  display: inline-block;
+  -webkit-transform: translateY(-16%);
+  -ms-transform: translateY(-16%);
+  transform: translateY(-16%);
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 1.7rem;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  color: hsl(180,8%,52%);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #5eaaa6;
+  font-weight: 600;
+  height: 24px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.c5 {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-weight: 600;
+  margin: 0px;
+  white-space: nowrap;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c11 {
+  height: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: hsl(180,31%,95%);
+  margin: 10px 16px 10px 0px;
+}
+
+.c12 {
+  padding: 0px 9px 0px 8px;
+  color: hsl(180,29%,50%);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+.c8 {
+  border-top: 1px solid hsl(180,8%,52%);
+  opacity: 0.5;
+  margin: 0px 0px 4px 0px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.c2 {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  -webkit-transform: translate( 0px, -86px );
+  -ms-transform: translate( 0px, -86px );
+  transform: translate( 0px, -86px );
+}
+
+.c0 {
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-left: 5px solid white;
+  background-color: white;
+  box-shadow: 0px 10px 10px rgba(94,140,160,0.15);
+  margin-top: 40px;
+  width: 100%;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 24px;
+  padding-top: 44px;
+}
+
+@media (min-width:600px) {
+  .c7:not(:first-child)::before {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media (min-width:600px) {
+  .c7 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width:500px) {
+  .c4 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width:500px) {
+  .c3 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width:600px) {
+  .c3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width:415px) {
+  .c10 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width:415px) {
+  .c11 {
+    margin: 10px 0px 10px 16px;
+  }
+}
+
+@media (min-width:785px) {
+  .c8 {
+    display: none;
+  }
+}
+
+@media (min-width:785px) {
+  .c1 {
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:555px) {
+  .c2 {
+    width: 88px;
+    height: 88px;
+    position: relative;
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    transform: translate(0,0);
+    margin-right: 24px;
+  }
+}
+
+@media (min-width:555px) {
+  .c0 {
+    padding-top: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:785px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 24px 24px 24px 24px;
+  }
+}
+
+@media (min-width:900px) {
+  .c0 {
+    padding: 30px 48px 30px 48px;
+  }
+}
+
+<div
+  className="c0"
+  role="contentinfo listitem"
+>
+  <div
+    className="c1"
+  >
+    <img
+      alt="company logo"
+      className="c2"
+    />
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+      >
+        <span />
+        
+        
+      </div>
+      <h3
+        className="c5"
+      />
+      <ul
+        className="c6"
+      >
+        <li
+          className="c7"
+        />
+        <li
+          className="c7"
+        />
+        <li
+          className="c7"
+        />
+      </ul>
+    </div>
+  </div>
+  <hr
+    className="c8"
+  />
+  <div
+    className="c9"
+  >
+    <ul
+      className="c10"
+      role="listbox"
+    >
+      <li
+        className="c11"
+        role="listitem button"
+      >
+        <span
+          className="c12"
+        >
+          Frontend
+        </span>
+        
+      </li>
+      <li
+        className="c11"
+        role="listitem button"
+      >
+        <span
+          className="c12"
+        >
+          Junior
+        </span>
+        
+      </li>
+      <li
+        className="c11"
+        role="listitem button"
+      >
+        <span
+          className="c12"
+        >
+          CSS
+        </span>
+        
+      </li>
+      <li
+        className="c11"
+        role="listitem button"
+      >
+        <span
+          className="c12"
+        >
+          JavaScript
+        </span>
+        
+      </li>
+    </ul>
+  </div>
+</div>
+`;
