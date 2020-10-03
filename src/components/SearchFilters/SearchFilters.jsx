@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Filters({ children, flexEnd }) {
+function SearchFilters({ children, flexEnd }) {
   return (
-    <StyledFilters flexEnd={flexEnd} role="listbox">
+    <StyledSearchFilters flexEnd={flexEnd} role="listbox">
       {children}
-    </StyledFilters>
+    </StyledSearchFilters>
   );
 }
 
-const StyledFilters = styled.ul`
+const StyledSearchFilters = styled.ul`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -19,4 +19,4 @@ const StyledFilters = styled.ul`
   }
 `;
 
-export default Filters;
+export default SearchFilters;

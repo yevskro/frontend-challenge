@@ -1,8 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
+import SearchButton from '../SearchButton/SearchButton';
 
 function Search({ children }) {
-  return <StyledSearch role="search">{children}</StyledSearch>;
+  return (
+    <StyledSearch role="search">
+      {children}
+      <SearchButton />
+    </StyledSearch>
+  );
 }
 
 const StyledSearch = styled.div`

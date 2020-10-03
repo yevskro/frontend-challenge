@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Company({ children, newly, featured }) {
+function JobCompany({ children, newly, featured }) {
   return (
-    <StyledCompany>
+    <StyledJobCompany>
       {children}
       {newly ? <Newly /> : ''}
       {featured ? <Featured /> : ''}
-    </StyledCompany>
+    </StyledJobCompany>
   );
 }
 
@@ -41,7 +41,7 @@ const Featured = styled(Status)`
   }
 `;
 
-const StyledCompany = styled.div`
+const StyledJobCompany = styled.div`
   display: flex;
   color: #5eaaa6;
   font-weight: ${({ theme }) => theme.fontWeight.bold};
@@ -52,4 +52,4 @@ const StyledCompany = styled.div`
     font-size: ${({ theme }) => theme.fontSize.small};
   }
 `;
-export default Company;
+export default JobCompany;

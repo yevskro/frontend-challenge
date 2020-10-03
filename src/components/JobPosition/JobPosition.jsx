@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 import JobInfo from '../JobInfo/JobInfo';
-import Company from '../Company/Company';
+import JobCompany from '../JobCompany/JobCompany';
 
-function Position({ children, postedAt, contract, location, company }) {
+function JobPosition({ children, postedAt, contract, location, company }) {
   return (
-    <StyledPosition>
-      <Company newly={company.newly} featured={company.featured}>
+    <StyledJobPosition>
+      <JobCompany newly={company.newly} featured={company.featured}>
         {company.name}
-      </Company>
+      </JobCompany>
       <Heading>{children}</Heading>
       <JobInfo postedAt={postedAt} contract={contract} location={location} />
-    </StyledPosition>
+    </StyledJobPosition>
   );
 }
 
@@ -23,7 +23,7 @@ const Heading = styled.h3`
   white-space: nowrap;
 `;
 
-const StyledPosition = styled.div`
+const StyledJobPosition = styled.div`
   display: flex;
   flex-direction: column;
   @media (min-width: 500px) {
@@ -34,4 +34,4 @@ const StyledPosition = styled.div`
   }
 `;
 
-export default Position;
+export default JobPosition;

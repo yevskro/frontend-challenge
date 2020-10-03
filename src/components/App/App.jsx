@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from '../Header/Header';
-import JobList from '../JobList/JobList';
+import Jobs from '../Jobs/Jobs';
 import Theme from '../../providers/Theme';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <Theme>
       <StyledApp role="application">
         <Header />
-        <JobList />
+        <Jobs />
       </StyledApp>
     </Theme>
   );
@@ -26,4 +26,5 @@ const StyledApp = styled.div`
   height: 100%;
   width: 100%;
 `;
+
 export default App;

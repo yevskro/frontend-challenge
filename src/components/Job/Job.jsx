@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import Position from '../Position/Position';
-import Filters from '../Filters/Filters';
-import Filter from '../Filter/Filter';
+import JobPosition from '../JobPosition/JobPosition';
+import SearchFilters from '../SearchFilters/SearchFilters';
+import SearchFilter from '../SearchFilter/SearchFilter';
 
-function JobCard({ data }) {
+function Job({ data }) {
   return (
     <StyledJob featured={data.featured}>
-      <Information>
-        <Logo src={data.logo} alt="company logo" />
-        <Position
+      <JobInformation>
+        <CompanyLogo src={data.logo} alt="company logo" />
+        <JobPosition
           company={{
             name: data.company,
             newly: data.newly,
@@ -20,16 +20,16 @@ function JobCard({ data }) {
           location={data.location}
         >
           {data.position}
-        </Position>
-      </Information>
+        </JobPosition>
+      </JobInformation>
       <HorizontalLine />
       <JobFilters>
-        <Filters flexEnd>
-          <Filter>Frontend</Filter>
-          <Filter>Junior</Filter>
-          <Filter>CSS</Filter>
-          <Filter>JavaScript</Filter>
-        </Filters>
+        <SearchFilters flexEnd>
+          <SearchFilter>Frontend</SearchFilter>
+          <SearchFilter>Junior</SearchFilter>
+          <SearchFilter>CSS</SearchFilter>
+          <SearchFilter>JavaScript</SearchFilter>
+        </SearchFilters>
       </JobFilters>
     </StyledJob>
   );
@@ -50,7 +50,7 @@ const HorizontalLine = styled.hr`
   }
 `;
 
-const Information = styled.div`
+const JobInformation = styled.div`
   display: flex;
   align-items: center;
   padding-bottom: 10px;
@@ -60,7 +60,7 @@ const Information = styled.div`
   }
 `;
 
-const Logo = styled.img`
+const CompanyLogo = styled.img`
   width: 48px;
   height: 48px;
   position: absolute;
@@ -110,4 +110,4 @@ const StyledJob = styled.div`
   }
 `;
 
-export default JobCard;
+export default Job;

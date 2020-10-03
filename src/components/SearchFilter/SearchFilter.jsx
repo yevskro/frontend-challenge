@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Filter({ children, remove }) {
+function SearchFilter({ children, remove }) {
   return (
-    <StyledFilter role="listitem button">
+    <StyledSearchFilter role="listitem button">
       <Text>{children}</Text>
       {remove ? (
         <Remove>
@@ -12,11 +12,11 @@ function Filter({ children, remove }) {
       ) : (
         ''
       )}
-    </StyledFilter>
+    </StyledSearchFilter>
   );
 }
 
-const StyledFilter = styled.li`
+const StyledSearchFilter = styled.li`
   height: 32px;
   display: flex;
   justify-content: center;
@@ -50,4 +50,4 @@ const RemoveIcon = styled.img`
   content: url('/assets/images/icon-remove.svg');
 `;
 
-export default Filter;
+export default SearchFilter;
