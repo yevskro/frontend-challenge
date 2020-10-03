@@ -12,12 +12,11 @@ function JobInfo({ postedAt, contract, location }) {
 }
 
 const Info = styled.li`
-  color: rgba(133, 139, 139, 0.75);
-  font-weight: 400;
   white-space: nowrap;
 
+  /* increasing the size of the bullet represented by content character '.' */
   &:first-child::before {
-    font-size: 1.7em;
+    font-size: 1.7rem;
     content: ' ';
   }
 
@@ -27,22 +26,24 @@ const Info = styled.li`
     transform: translateY(-16%);
     padding-left: 4px;
     padding-right: 4px;
-    font-size: 1.7em;
+    font-size: 1.7rem;
 
-    @media (min-width: 550px) {
+    @media (min-width: 600px) {
       padding-left: 8px;
       padding-right: 8px;
     }
+  }
+  @media (min-width: 600px) {
+    font-size: ${({ theme }) => theme.fontSize.medium};
   }
 `;
 
 const StyledJobInfo = styled.ul`
   display: flex;
   list-style: none;
-  margin-bottom: 15px;
-  @media (min-width: 491px) {
-    margin-bottom: 0px;
-  }
+  color: ${({ theme }) => theme.color.neutral.darkGrayishCyan};
+  font-weight: ${({ theme }) => theme.fontWeight.thin};
+  font-size: ${({ theme }) => theme.fontSize.small};
 `;
 
 export default JobInfo;
