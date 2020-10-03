@@ -267,7 +267,7 @@ exports[`snapshot 1`] = `
 
 <div
   className="c0"
-  role="contentinfo listitem"
+  role="article listitem"
 >
   <div
     className="c1"
@@ -291,15 +291,19 @@ exports[`snapshot 1`] = `
       />
       <ul
         className="c6"
+        role="list"
       >
         <li
           className="c7"
+          role="listitem"
         />
         <li
           className="c7"
+          role="listitem"
         />
         <li
           className="c7"
+          role="listitem"
         />
       </ul>
     </div>

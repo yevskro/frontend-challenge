@@ -11,7 +11,8 @@ test('renders without crashing', () => {
     </Theme>
   );
 
-  getByRole('heading');
+  const jobElement = getByRole('heading');
+  expect(jobElement).toBeInTheDocument();
 });
 
 test('renders only company name', () => {
@@ -21,7 +22,8 @@ test('renders only company name', () => {
     </Theme>
   );
 
-  getByText('Durrann');
+  const jobElement = getByText('Durran');
+  expect(jobElement).toBeInTheDocument();
 });
 
 test('renders pills', async () => {
@@ -33,6 +35,10 @@ test('renders pills', async () => {
 
   const pillElements = getAllByRole('note');
   expect(pillElements.length).toBe(2);
+  expect(pillElements[0].textContent).toStrictEqual('NEW!');
+  expect(pillElements[0]).toBeInTheDocument();
+  expect(pillElements[1].textContent).toStrictEqual('FEATURED');
+  expect(pillElements[1]).toBeInTheDocument();
 });
 
 test('renders featured pill', () => {
@@ -44,6 +50,8 @@ test('renders featured pill', () => {
 
   const pillElements = getAllByRole('note');
   expect(pillElements.length).toBe(1);
+  expect(pillElements[0].textContent).toStrictEqual('FEATURED');
+  expect(pillElements[0]).toBeInTheDocument();
 });
 
 test('renders newly pill', () => {
@@ -55,6 +63,8 @@ test('renders newly pill', () => {
 
   const pillElements = getAllByRole('note');
   expect(pillElements.length).toBe(1);
+  expect(pillElements[0].textContent).toStrictEqual('NEW!');
+  expect(pillElements[0]).toBeInTheDocument();
 });
 
 test('snapshot', async () => {

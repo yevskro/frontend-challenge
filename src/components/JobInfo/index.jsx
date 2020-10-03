@@ -3,10 +3,10 @@ import styled from 'styled-components';
 
 function JobInfo({ postedAt, contract, location }) {
   return (
-    <StyledJobInfo>
-      <Info>{postedAt}</Info>
-      <Info>{contract}</Info>
-      <Info>{location}</Info>
+    <StyledJobInfo role="list">
+      <Info role="listitem">{postedAt}</Info>
+      <Info role="listitem">{contract}</Info>
+      <Info role="listitem">{location}</Info>
     </StyledJobInfo>
   );
 }

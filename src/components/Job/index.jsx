@@ -6,7 +6,7 @@ import SearchFilter from '../SearchFilter';
 
 function Job({ data }) {
   return (
-    <StyledJob featured={data.featured} role="contentinfo listitem">
+    <StyledJob featured={data.featured} role="article listitem">
       <JobInformation>
         <CompanyLogo src={data.logo} alt="company logo" />
         <JobPosition

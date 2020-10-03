@@ -5,13 +5,13 @@ function JobCompany({ children, newly, featured }) {
   return (
     <StyledJobCompany role="heading">
       {children}
-      {newly ? <Newly role="note" /> : ''}
-      {featured ? <Featured role="note" /> : ''}
+      {newly ? <PrimaryPill role="note">NEW!</PrimaryPill> : ''}
+      {featured ? <SecondaryPill role="note">FEATURED</SecondaryPill> : ''}
     </StyledJobCompany>
   );
 }
 
-const Status = styled.span`
+const Pill = styled.span`
   line-height: 26px;
   vertical-align: middle;
   height: 24px;
@@ -24,21 +24,15 @@ const Status = styled.span`
   font-size: ${({ theme }) => theme.fontSize.small};
 `;
 
-const Newly = styled(Status)`
+const PrimaryPill = styled(Pill)`
   background-color: ${({ theme }) => theme.color.primary.desaturtedDarkCyan};
   margin-left: 18px;
-  &:after {
-    content: 'NEW!';
-    font-size: ${({ theme }) => theme.fontSize.xxsmall};
-  }
+  font-size: ${({ theme }) => theme.fontSize.xxsmall};
 `;
 
-const Featured = styled(Status)`
+const SecondaryPill = styled(Pill)`
   background-color: ${({ theme }) => theme.color.neutral.veryDarkGrayishCyan};
-  &:after {
-    content: 'FEATURED';
-    font-size: ${({ theme }) => theme.fontSize.xxsmall};
-  }
+  font-size: ${({ theme }) => theme.fontSize.xxsmall};
 `;
 
 const StyledJobCompany = styled.div`

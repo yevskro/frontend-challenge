@@ -6,12 +6,13 @@ import Theme from '../../../providers/Theme';
 import jobData from '../../../data.json';
 
 test('renders without crashing', () => {
-  const { getByRole } = render(
+  const { debug, getByRole } = render(
     <Theme>
       <Job data={[jobData[0]]} />
     </Theme>
   );
-  const jobElement = getByRole('contentinfo');
+  debug();
+  const jobElement = getByRole('article');
   expect(jobElement).toBeInTheDocument();
 });
 
