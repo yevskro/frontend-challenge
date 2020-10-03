@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+.c1 {
+  line-height: 26px;
+  vertical-align: middle;
+  height: 24px;
+  padding-left: 9px;
+  padding-right: 9px;
+  color: white;
+  border-radius: 20px;
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 0.9rem;
+}
+
+.c2 {
+  background-color: hsl(180,29%,50%);
+  margin-left: 18px;
+}
+
+.c2:after {
+  content: 'NEW!';
+  font-size: 0.7rem;
+}
+
+.c3 {
+  background-color: hsl(180,14%,20%);
+}
+
+.c3:after {
+  content: 'FEATURED';
+  font-size: 0.7rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #5eaaa6;
+  font-weight: 600;
+  height: 24px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    font-size: 0.9rem;
+  }
+}
+
+<div
+  className="c0"
+  role="heading"
+>
+  Durran
+  <span
+    className="c1 c2"
+    role="note"
+  />
+  <span
+    className="c1 c3"
+    role="note"
+  />
+</div>
+`;

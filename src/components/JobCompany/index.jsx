@@ -3,10 +3,10 @@ import styled from 'styled-components';
 
 function JobCompany({ children, newly, featured }) {
   return (
-    <StyledJobCompany>
-      <span>{children}</span>
-      {newly ? <Newly /> : ''}
-      {featured ? <Featured /> : ''}
+    <StyledJobCompany role="heading">
+      {children}
+      {newly ? <Newly role="note" /> : ''}
+      {featured ? <Featured role="note" /> : ''}
     </StyledJobCompany>
   );
 }

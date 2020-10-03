@@ -281,8 +281,8 @@ exports[`snapshot 1`] = `
     >
       <div
         className="c4"
+        role="heading"
       >
-        <span />
         
         
       </div>
