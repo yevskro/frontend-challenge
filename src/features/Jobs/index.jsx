@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import Search from '../Search';
-import Job from '../Job';
+import Job from './Job';
+import JobList from './JobList';
 import jobData from '../../data.json';
-import SearchFilters from '../SearchFilters';
-import SearchFilter from '../SearchFilter';
+import SearchFilters from '../Search/SearchFilters';
+import SearchFilter from '../Search/SearchFilter';
 
 function Jobs() {
   return (
@@ -14,22 +15,14 @@ function Jobs() {
           <SearchFilter remove>JavaScript</SearchFilter>
         </SearchFilters>
       </Search>
-      <List>
+      <JobList>
         <Job data={jobData[0]} />
         <Job data={jobData[1]} />
         <Job data={jobData[2]} />
-      </List>
+      </JobList>
     </StyledJobs>
   );
 }
-
-function List({ children }) {
-  return <StyledList>{children}</StyledList>;
-}
-
-const StyledList = styled.ul`
-  margin-bottom: 150px;
-`;
 
 const StyledJobs = styled.section`
   position: absolute;

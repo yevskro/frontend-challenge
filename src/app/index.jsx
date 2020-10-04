@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from '../Header';
-import Jobs from '../Jobs';
-import Theme from '../../providers/Theme';
+import Header from '../shared/Header';
+import Jobs from '../features/Jobs';
+import Theme from '../providers/Theme';
 
 function App() {
   return (
