@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import SearchClearButton from '../SearchClearButton';
+import SearchClearButton from './SearchClearButton';
 
-function Search({ children }) {
+function SearchByFilters({ children, visibile }) {
   return (
-    <StyledSearch role="search">
+    <StyledSearchByFilters visibile={visibile} role="search">
       {children}
       <SearchClearButton />
-    </StyledSearch>
+    </StyledSearchByFilters>
   );
 }
 
-const StyledSearch = styled.div`
+const StyledSearchByFilters = styled.div`
   display: flex;
   padding: 10px 25px 10px 21px;
   align-items: center;
@@ -20,6 +20,7 @@ const StyledSearch = styled.div`
   justify-content: space-between;
   box-shadow: 0px 10px 10px ${({ theme }) => theme.color.shadow};
   margin-bottom: 56px;
+  visibility: ${({ visible }) => (visible ? 'visibile' : 'hidden')};
 `;
 
-export default Search;
+export default SearchByFilters;
