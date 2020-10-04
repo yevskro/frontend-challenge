@@ -1,12 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function SearchFilter({ children, remove }) {
+function SearchFilter({
+  children,
+  filter,
+  remove,
+  onRemoveFilter,
+  onAddFilter,
+}) {
   return (
     <StyledSearchFilter role="listitem button">
-      <Text remove={remove}>{children}</Text>
+      <Text
+        onClick={remove ? () => {} : () => onAddFilter(filter)}
+        remove={remove}
+      >
+        {children}
+      </Text>
       {remove ? (
-        <Remove>
+        <Remove onClick={remove ? () => onRemoveFilter(filter) : () => {}}>
           <RemoveIcon />
         </Remove>
       ) : (
