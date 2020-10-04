@@ -9,9 +9,13 @@ import SearchFilter from '../SearchByFilters/SearchFilter';
 import useSearchByFilters from '../../shared/hooks/useSearchByFilters';
 
 function Jobs() {
-  const { filteredData, filters, addFilter, removeFilter } = useSearchByFilters(
-    jobData
-  );
+  const {
+    filteredData,
+    filters,
+    addFilter,
+    removeFilter,
+    clear,
+  } = useSearchByFilters(jobData);
 
   const jsxFilters = filters.map((filter) => (
     <SearchFilter filter={filter} remove onRemoveFilter={removeFilter}>
@@ -25,7 +29,7 @@ function Jobs() {
 
   return (
     <StyledJobs role="main">
-      <SearchByFilters visible={!!filters.length}>
+      <SearchByFilters visible={!!filters.length} onClear={clear}>
         <SearchFilters>{jsxFilters}</SearchFilters>
       </SearchByFilters>
       <JobList>{jsxJobs}</JobList>

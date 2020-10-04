@@ -85,7 +85,12 @@ function useSearchByFilters(_data = []) {
     setFilteredData(filterData(newFilters));
   }
 
-  return { filteredData, filters, addFilter, removeFilter };
+  function clear() {
+    setFilters([]);
+    setFilteredData(data);
+  }
+
+  return { filteredData, filters, addFilter, removeFilter, clear };
 }
 
 export default useSearchByFilters;

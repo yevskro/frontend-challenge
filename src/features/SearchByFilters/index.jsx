@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import SearchClearButton from './SearchClearButton';
 
-function SearchByFilters({ children, visible }) {
+function SearchByFilters({ children, visible, onClear }) {
   return (
     <StyledSearchByFilters visible={visible} role="search">
       {children}
-      <SearchClearButton />
+      <SearchClearButton onClick={onClear} />
     </StyledSearchByFilters>
   );
 }
