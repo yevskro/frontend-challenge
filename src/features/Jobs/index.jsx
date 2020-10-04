@@ -15,7 +15,7 @@ function Jobs() {
 
   const jsxFilters = filters.map((filter) => (
     <SearchFilter filter={filter} remove onRemoveFilter={removeFilter}>
-      {Object.keys(filters)[0]}
+      {filter[Object.keys(filter)[0]]}
     </SearchFilter>
   ));
 
@@ -25,7 +25,7 @@ function Jobs() {
 
   return (
     <StyledJobs role="main">
-      <SearchByFilters visibile={!!filters.length}>
+      <SearchByFilters visible={!!filters.length}>
         <SearchFilters>{jsxFilters}</SearchFilters>
       </SearchByFilters>
       <JobList>{jsxJobs}</JobList>
