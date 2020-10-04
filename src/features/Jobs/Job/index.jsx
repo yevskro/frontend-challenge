@@ -9,19 +9,27 @@ function Job({ data, onAddFilter }) {
   const jsxFilters = [];
 
   jsxFilters.push(
-    <SearchFilter filter={{ role: data.role }}>{data.role}</SearchFilter>
+    <SearchFilter onAddFilter={onAddFilter} filter={{ role: data.role }}>
+      {data.role}
+    </SearchFilter>
   );
   jsxFilters.push(
-    <SearchFilter filter={{ level: data.level }}>{data.level}</SearchFilter>
+    <SearchFilter onAddFilter={onAddFilter} filter={{ level: data.level }}>
+      {data.level}
+    </SearchFilter>
   );
   data.languages.forEach((language) => {
     jsxFilters.push(
-      <SearchFilter filter={{ languages: language }}>{language}</SearchFilter>
+      <SearchFilter onAddFilter={onAddFilter} filter={{ languages: language }}>
+        {language}
+      </SearchFilter>
     );
   });
   data.tools.forEach((tool) => {
     jsxFilters.push(
-      <SearchFilter filter={{ tools: tool }}>{tool}</SearchFilter>
+      <SearchFilter onAddFilter={onAddFilter} filter={{ tools: tool }}>
+        {tool}
+      </SearchFilter>
     );
   });
 
