@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import SearchClearButton from './SearchClearButton';
 
-function SearchByFilters({ children, visibile }) {
+function SearchByFilters({ children, visible }) {
   return (
-    <StyledSearchByFilters visibile={visibile} role="search">
+    <StyledSearchByFilters visible={visible} role="search">
       {children}
       <SearchClearButton />
     </StyledSearchByFilters>
@@ -21,6 +21,7 @@ const StyledSearchByFilters = styled.div`
   box-shadow: 0px 10px 10px ${({ theme }) => theme.color.shadow};
   margin-bottom: 56px;
   visibility: ${({ visible }) => (visible ? 'visibile' : 'hidden')};
+  min-height: 75px;
 `;
 
 export default SearchByFilters;
