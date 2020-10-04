@@ -25,6 +25,7 @@ const StyledSearchFilter = styled.li`
     theme.color.neutral.lightGrayishCyanFilterTablets};
   margin: 10px 16px 10px 0px;
   border-radius: 5px;
+  overflow: hidden;
   @media (min-width: 415px) {
     margin: 10px 0px 10px 16px;
   }
