@@ -6,20 +6,29 @@ import JobList from './JobList';
 import jobData from '../../data.json';
 import SearchFilters from '../SearchByFilters/SearchFilters';
 import SearchFilter from '../SearchByFilters/SearchFilter';
+import useSearchByFilters from '../SearchByFilters/useSearchByFilters';
 
 function Jobs() {
+  const { filteredData, filters, addFilter, removeFilter } = useSearchByFilters(
+    jobData
+  );
+
+  const jsxFilters = filters.map((filter) => (
+    <SearchFilter filter={filter} remove onRemoveFilter={removeFilter}>
+      {Object.keys(filters)[0]}
+    </SearchFilter>
+  ));
+
+  const jsxJobs = filteredData.map((job) => (
+    <Job data={job} onAddFilter={addFilter} />
+  ));
+
   return (
     <StyledJobs role="main">
-      <SearchByFilters>
-        <SearchFilters>
-          <SearchFilter remove>JavaScript</SearchFilter>
-        </SearchFilters>
+      <SearchByFilters visibile={!!filters.length}>
+        <SearchFilters>{jsxFilters}</SearchFilters>
       </SearchByFilters>
-      <JobList>
-        <Job data={jobData[0]} />
-        <Job data={jobData[1]} />
-        <Job data={jobData[2]} />
-      </JobList>
+      <JobList>{jsxJobs}</JobList>
     </StyledJobs>
   );
 }
