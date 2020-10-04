@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import JobPosition from '../JobPosition';
-import SearchFilters from '../SearchFilters';
-import SearchFilter from '../SearchFilter';
+import SearchFilters from '../../SearchByFilters/SearchFilters';
+import SearchFilter from '../../SearchByFilters/SearchFilter';
 
 function Job({ data }) {
   return (
