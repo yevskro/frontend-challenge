@@ -6,7 +6,7 @@ import JobList from './JobList';
 import jobData from '../../data.json';
 import SearchFilters from '../SearchByFilters/SearchFilters';
 import SearchFilter from '../SearchByFilters/SearchFilter';
-import useSearchByFilters from '../SearchByFilters/useSearchByFilters';
+import useSearchByFilters from '../../shared/hooks/useSearchByFilters';
 
 function Jobs() {
   const { filteredData, filters, addFilter, removeFilter } = useSearchByFilters(
