@@ -4,7 +4,27 @@ import JobPosition from '../JobPosition';
 import SearchFilters from '../../SearchByFilters/SearchFilters';
 import SearchFilter from '../../SearchByFilters/SearchFilter';
 
-function Job({ data }) {
+function Job({ data, onAddFilter }) {
+  // role, level, languages is an array, tools is an array
+  const jsxFilters = [];
+
+  jsxFilters.push(
+    <SearchFilter filter={{ role: data.role }}>{data.role}</SearchFilter>
+  );
+  jsxFilters.push(
+    <SearchFilter filter={{ level: data.level }}>{data.level}</SearchFilter>
+  );
+  data.languages.forEach((language) => {
+    jsxFilters.push(
+      <SearchFilter filter={{ languages: language }}>{language}</SearchFilter>
+    );
+  });
+  data.tools.forEach((tool) => {
+    jsxFilters.push(
+      <SearchFilter filter={{ tools: tool }}>{tool}</SearchFilter>
+    );
+  });
+
   return (
     <StyledJob featured={data.featured} role="article listitem">
       <JobInformation>
@@ -24,12 +44,7 @@ function Job({ data }) {
       </JobInformation>
       <HorizontalLine />
       <JobFilters>
-        <SearchFilters flexEnd>
-          <SearchFilter>Frontend</SearchFilter>
-          <SearchFilter>Junior</SearchFilter>
-          <SearchFilter>CSS</SearchFilter>
-          <SearchFilter>JavaScript</SearchFilter>
-        </SearchFilters>
+        <SearchFilters flexEnd>{jsxFilters}</SearchFilters>
       </JobFilters>
     </StyledJob>
   );
