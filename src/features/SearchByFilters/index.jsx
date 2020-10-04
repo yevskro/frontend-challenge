@@ -13,15 +13,15 @@ function SearchByFilters({ children, visible, onClear }) {
 
 const StyledSearchByFilters = styled.div`
   display: flex;
-  padding: 10px 25px 10px 21px;
+  justify-content: space-between;
   align-items: center;
+  min-height: 75px;
+  padding: 10px 25px 10px 21px;
+  margin-bottom: 56px;
   border-radius: 5px;
   background-color: #fff;
-  justify-content: space-between;
   box-shadow: 0px 10px 10px ${({ theme }) => theme.color.shadow};
-  margin-bottom: 56px;
   visibility: ${({ visible }) => (visible ? 'visibile' : 'hidden')};
-  min-height: 75px;
 `;
 
 export default SearchByFilters;

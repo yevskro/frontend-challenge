@@ -18,13 +18,13 @@ function App() {
 const StyledApp = styled.div`
   position: absolute;
   z-index: 1;
-  background-color: ${({ theme }) =>
-    theme.color.neutral.lightGrayishCyanBackground};
+  height: 100%;
+  width: 100%;
   font-family: ${({ theme }) => theme.fontFamily};
   font-size: ${({ theme }) => theme.fontSize.medium};
   font-weight: ${({ theme }) => theme.fontWeight.normal};
-  height: 100%;
-  width: 100%;
+  background-color: ${({ theme }) =>
+    theme.color.neutral.lightGrayishCyanBackground};
 `;
 
 export default App;

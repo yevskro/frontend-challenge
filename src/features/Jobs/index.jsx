@@ -44,6 +44,7 @@ const StyledJobs = styled.section`
   right: 5%;
   top: 120px;
   background: transparent;
+
   @media (min-width: 401px) {
     left: 11%;
     right: 11%;

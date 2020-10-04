@@ -16,11 +16,11 @@ function JobPosition({ children, postedAt, contract, location, company }) {
 }
 
 const Heading = styled.h3`
-  padding-top: 11px;
-  padding-bottom: 11px;
-  font-weight: ${({ theme }) => theme.fontWeight.bold};
+  padding: 11px 0px 11px 0px;
   margin: 0px;
   white-space: nowrap;
+  font-weight: ${({ theme }) => theme.fontWeight.bold};
+
   &:hover {
     color: ${({ theme }) => theme.color.primary.desaturtedDarkCyan};
     cursor: pointer;
@@ -30,9 +30,11 @@ const Heading = styled.h3`
 const StyledJobPosition = styled.div`
   display: flex;
   flex-direction: column;
+
   @media (min-width: 500px) {
     font-size: ${({ theme }) => theme.fontSize.medium};
   }
+
   @media (min-width: 600px) {
     font-size: ${({ theme }) => theme.fontSize.large};
   }

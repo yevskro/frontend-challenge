@@ -28,15 +28,16 @@ function SearchFilter({
 }
 
 const StyledSearchFilter = styled.li`
-  height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${({ theme }) =>
-    theme.color.neutral.lightGrayishCyanFilterTablets};
+  height: 32px;
   margin: 10px 16px 10px 0px;
   border-radius: 5px;
-  overflow: hidden;
+  overflow: hidden; /* hides the squared border on hover of the span child */
+  background-color: ${({ theme }) =>
+    theme.color.neutral.lightGrayishCyanFilterTablets};
+
   @media (min-width: 415px) {
     margin: 10px 0px 10px 16px;
   }
@@ -44,16 +45,17 @@ const StyledSearchFilter = styled.li`
 
 const Text = styled.span`
   display: flex;
-  height: 100%;
   align-items: center;
+  height: 100%;
   padding: 0px 9px 0px 8px;
   color: ${({ theme }) => theme.color.primary.desaturtedDarkCyan};
   font-size: ${({ theme }) => theme.fontSize.small};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
+
   &:hover {
+    /* only apply colors if this is a not applied filter */
     color: ${({ remove, theme }) =>
       remove ? theme.color.primary.desaturtedDarkCyan : 'white'};
-      &:hover {
     background-color: ${({ remove, theme }) =>
       remove
         ? theme.color.neutral.lightGrayishCyanFilterTablets
@@ -63,13 +65,14 @@ const Text = styled.span`
 `;
 
 const Remove = styled.div`
-  width: 32px;
-  height: 32px;
-  background-color: ${({ theme }) => theme.color.primary.desaturtedDarkCyan};
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 32px;
+  height: 32px;
   border-radius: 0px 5px 5px 0px;
+  background-color: ${({ theme }) => theme.color.primary.desaturtedDarkCyan};
+
   &:hover {
     background-color: ${({ theme }) => theme.color.neutral.veryDarkGrayishCyan};
     cursor: pointer;

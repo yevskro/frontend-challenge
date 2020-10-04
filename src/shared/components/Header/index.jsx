@@ -11,9 +11,9 @@ function Header() {
 
 const Image = styled.img`
   height: 156px;
+  width: 100%;
   background-color: ${({ theme }) => theme.color.primary.desaturtedDarkCyan};
   background-image: url('/assets/images/bg-header-mobile.svg');
-  width: 100%;
   @media (min-width: 376px) {
     background-image: url('/assets/images/bg-header-desktop.svg');
   }

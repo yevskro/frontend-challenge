@@ -65,9 +65,9 @@ const JobFilters = styled.div`
 `;
 
 const HorizontalLine = styled.hr`
-  border-top: 1px solid ${({ theme }) => theme.color.neutral.darkGrayishCyan};
   opacity: 0.5;
   margin: 0px 0px 4px 0px;
+  border-top: 1px solid ${({ theme }) => theme.color.neutral.darkGrayishCyan};
   @media (min-width: 785px) {
     display: none;
   }
@@ -79,52 +79,45 @@ const JobInformation = styled.div`
   padding-bottom: 10px;
   @media (min-width: 785px) {
     padding-bottom: 0px;
-    padding-left: 0px;
   }
 `;
 
 const CompanyLogo = styled.img`
-  width: 48px;
-  height: 48px;
   position: absolute;
-  transform: translate(
-    0px,
-    -86px
-  ); /* take account of the border width of 5px from x */
+  height: 48px;
+  width: 48px;
+  transform: translate(0px, -86px);
   @media (min-width: 555px) {
-    width: 88px;
-    height: 88px;
     position: relative;
-    transform: translate(0, 0);
+    height: 88px;
+    width: 88px;
     margin-right: 24px;
+    transform: translate(0, 0);
   }
 `;
 
 const StyledJob = styled.div`
   box-sizing: border-box;
+  width: 100%;
+  margin-top: 40px;
+  padding: 44px 24px 14px 20px;
+  background-color: white;
   border-radius: 5px;
   border-left: 5px solid
     ${(props) =>
       props.featured ? props.theme.color.primary.desaturtedDarkCyan : 'white'};
-  background-color: white;
   box-shadow: 0px 10px 10px ${({ theme }) => theme.color.shadow};
-  margin-top: 40px;
-  width: 100%;
-  padding-bottom: 14px;
-  padding-left: 20px;
-  padding-right: 24px;
-  padding-top: 44px;
 
   @media (min-width: 555px) {
-    padding-top: 20px;
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
   }
 
   @media (min-width: 785px) {
     display: flex;
-    align-items: center;
     flex-direction: row;
+    align-items: center;
     padding: 24px 24px 24px 24px;
   }
 
