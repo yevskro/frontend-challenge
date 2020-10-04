@@ -8,7 +8,7 @@ function useSearchByFilters(_data = []) {
 
   function filterData(aFilters) {
     const newData = [];
-    let filtered = false;
+    let filtered = true;
     for (let dIdx = 0; dIdx < data.length; dIdx += 1) {
       for (let fIdx = 0; fIdx < aFilters.length; fIdx += 1) {
         if (
@@ -20,19 +20,21 @@ function useSearchByFilters(_data = []) {
           const dataValue = data[dIdx][filtersKey];
           if (dataValue) {
             if (Array.isArray(dataValue) && dataValue.includes(filterValue))
-              filtered = true;
+              filtered = false;
           }
           if (
             data[dIdx][filtersKey] &&
             data[dIdx][filtersKey] === aFilters[fIdx][filtersKey]
           )
-            filtered = true;
+            filtered = false;
         }
       }
       if (!filtered) {
         newData.push(data[dIdx]);
-      } else filtered = false;
+        filtered = true;
+      }
     }
+    console.log({ newData });
     return newData;
   }
 
@@ -73,6 +75,7 @@ function useSearchByFilters(_data = []) {
       newFilters.push(filter);
       setFilters(newFilters);
       setFilteredData(filterData(newFilters));
+      console.log(filter);
     }
   }
 
