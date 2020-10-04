@@ -12,7 +12,6 @@ function useSearchByFilters(_data = []) {
       let fIdx = 0;
       let filtered = true;
       while (filtered && fIdx < aFilters.length) {
-        console.log('lol');
         if (
           typeof data[dIdx] === 'object' &&
           typeof aFilters[fIdx] === 'object'
