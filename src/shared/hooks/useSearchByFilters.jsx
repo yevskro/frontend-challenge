@@ -8,9 +8,11 @@ function useSearchByFilters(_data = []) {
 
   function filterData(aFilters) {
     const newData = [];
-    let filtered = true;
     for (let dIdx = 0; dIdx < data.length; dIdx += 1) {
-      for (let fIdx = 0; fIdx < aFilters.length; fIdx += 1) {
+      let fIdx = 0;
+      let filtered = true;
+      while (filtered && fIdx < aFilters.length) {
+        console.log('lol');
         if (
           typeof data[dIdx] === 'object' &&
           typeof aFilters[fIdx] === 'object'
@@ -28,10 +30,10 @@ function useSearchByFilters(_data = []) {
           )
             filtered = false;
         }
-      }
-      if (!filtered) {
-        newData.push(data[dIdx]);
-        filtered = true;
+        if (!filtered) {
+          newData.push(data[dIdx]);
+        }
+        fIdx += 1;
       }
     }
     return newData;
