@@ -34,7 +34,6 @@ function useSearchByFilters(_data = []) {
         filtered = true;
       }
     }
-    console.log({ newData });
     return newData;
   }
 
@@ -75,7 +74,6 @@ function useSearchByFilters(_data = []) {
       newFilters.push(filter);
       setFilters(newFilters);
       setFilteredData(filterData(newFilters));
-      console.log(filter);
     }
   }
 
