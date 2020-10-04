@@ -1,20 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
-import Search from '../Search';
+import SearchByFilters from '../SearchByFilters';
 import Job from './Job';
 import JobList from './JobList';
 import jobData from '../../data.json';
-import SearchFilters from '../Search/SearchFilters';
-import SearchFilter from '../Search/SearchFilter';
+import SearchFilters from '../SearchByFilters/SearchFilters';
+import SearchFilter from '../SearchByFilters/SearchFilter';
 
 function Jobs() {
   return (
     <StyledJobs role="main">
-      <Search>
+      <SearchByFilters>
         <SearchFilters>
           <SearchFilter remove>JavaScript</SearchFilter>
         </SearchFilters>
-      </Search>
+      </SearchByFilters>
       <JobList>
         <Job data={jobData[0]} />
         <Job data={jobData[1]} />
