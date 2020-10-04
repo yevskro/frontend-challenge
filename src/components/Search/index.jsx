@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import SearchButton from '../SearchButton';
+import SearchClearButton from '../SearchClearButton';
 
 function Search({ children }) {
   return (
     <StyledSearch role="search">
       {children}
-      <SearchButton />
+      <SearchClearButton />
     </StyledSearch>
   );
 }

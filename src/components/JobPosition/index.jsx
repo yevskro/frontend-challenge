@@ -21,6 +21,10 @@ const Heading = styled.h3`
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   margin: 0px;
   white-space: nowrap;
+  &:hover {
+    color: ${({ theme }) => theme.color.primary.desaturtedDarkCyan};
+    cursor: pointer;
+  }
 `;
 
 const StyledJobPosition = styled.div`

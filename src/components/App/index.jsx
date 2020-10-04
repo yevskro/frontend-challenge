@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from '../Header/Header';
-import Jobs from '../Jobs/Jobs';
+import Header from '../Header';
+import Jobs from '../Jobs';
 import Theme from '../../providers/Theme';
 
 function App() {
