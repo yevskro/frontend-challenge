@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 function useSearchByFilters(_data = []) {
-  /* simple search filter one level deep */
+  /* simple search filter works only one deep on primitive values and objects */
   const [data] = useState(_data);
   const [filters, setFilters] = useState([]);
   const [filteredData, setFilteredData] = useState(data);
@@ -10,29 +10,26 @@ function useSearchByFilters(_data = []) {
     const newData = [];
     for (let dIdx = 0; dIdx < data.length; dIdx += 1) {
       let fIdx = 0;
-      let filtered = true;
-      while (filtered && fIdx < aFilters.length) {
+      let filtered = false;
+      while (!filtered && fIdx < aFilters.length) {
         if (
           typeof data[dIdx] === 'object' &&
           typeof aFilters[fIdx] === 'object'
         ) {
-          const filtersKey = Object.keys(aFilters[fIdx])[0];
-          const filterValue = aFilters[fIdx][filtersKey];
-          const dataValue = data[dIdx][filtersKey];
+          const filterKey = Object.keys(aFilters[fIdx])[0];
+          const filterValue = aFilters[fIdx][filterKey];
+          const dataValue = data[dIdx][filterKey];
           if (dataValue) {
-            if (Array.isArray(dataValue) && dataValue.includes(filterValue))
-              filtered = false;
+            if (Array.isArray(dataValue)) {
+              if (!dataValue.includes(filterValue)) filtered = true;
+            } else if (dataValue !== filterValue) filtered = true;
           }
-          if (
-            data[dIdx][filtersKey] &&
-            data[dIdx][filtersKey] === aFilters[fIdx][filtersKey]
-          )
-            filtered = false;
-        }
-        if (!filtered) {
-          newData.push(data[dIdx]);
         }
         fIdx += 1;
+      }
+      if (!filtered) {
+        console.log('newData being pushed');
+        newData.push(data[dIdx]);
       }
     }
     return newData;
@@ -85,12 +82,12 @@ function useSearchByFilters(_data = []) {
     setFilteredData(filterData(newFilters));
   }
 
-  function clear() {
+  function clearFilters() {
     setFilters([]);
     setFilteredData(data);
   }
 
-  return { filteredData, filters, addFilter, removeFilter, clear };
+  return { filteredData, filters, addFilter, removeFilter, clearFilters };
 }
 
 export default useSearchByFilters;

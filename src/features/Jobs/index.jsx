@@ -14,7 +14,7 @@ function Jobs() {
     filters,
     addFilter,
     removeFilter,
-    clear,
+    clearFilters,
   } = useSearchByFilters(jobData);
 
   const jsxFilters = filters.map((filter) => (
@@ -29,7 +29,7 @@ function Jobs() {
 
   return (
     <StyledJobs role="main">
-      <SearchByFilters visible={!!filters.length} onClear={clear}>
+      <SearchByFilters visible={!!filters.length} onClear={clearFilters}>
         <SearchFilters>{jsxFilters}</SearchFilters>
       </SearchByFilters>
       <JobList>{jsxJobs}</JobList>
