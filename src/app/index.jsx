@@ -1,15 +1,17 @@
+/* author of this project: Yevgeniy Skroznikov */
 import React from 'react';
 import styled from 'styled-components';
 import Header from '../shared/components/Header';
-import Jobs from '../features/Jobs';
 import Theme from '../shared/providers/Theme';
+import Jobs from '../features/Jobs';
+import jobData from '../shared/test/test-data.json';
 
 function App() {
   return (
     <Theme>
       <StyledApp role="application">
         <Header />
-        <Jobs />
+        <Jobs jobs={jobData} />
       </StyledApp>
     </Theme>
   );
@@ -17,7 +19,7 @@ function App() {
 
 const StyledApp = styled.div`
   position: absolute;
-  z-index: 1;
+  z-index: 1; /* create a z-index our Job component will be stacked infront of it */
   height: 100%;
   width: 100%;
   font-family: ${({ theme }) => theme.fontFamily};
