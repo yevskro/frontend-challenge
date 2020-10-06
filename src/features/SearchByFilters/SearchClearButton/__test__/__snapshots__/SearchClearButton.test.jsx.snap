@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+.c0 {
+  text-align: center;
+  font-size: 1rem;
+  color: hsl(180,8%,52%);
+}
+
+.c0:hover {
+  color: hsl(180,29%,50%);
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+<button
+  className="c0"
+  onClick={[MockFunction]}
+>
+  Clear
+</button>
+`;
