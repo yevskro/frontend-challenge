@@ -9,7 +9,7 @@ function JobPosition({ children, postedAt, contract, location, company }) {
       <JobCompany newly={company.newly} featured={company.featured}>
         {company.name}
       </JobCompany>
-      <Heading>{children}</Heading>
+      <Heading>{children}</Heading> {/* should include the job title */}
       <JobInfo postedAt={postedAt} contract={contract} location={location} />
     </StyledJobPosition>
   );
@@ -18,7 +18,7 @@ function JobPosition({ children, postedAt, contract, location, company }) {
 const Heading = styled.h3`
   padding: 11px 0px 11px 0px;
   margin: 0px;
-  white-space: nowrap;
+  white-space: nowrap; /* no wrap to the next line */
   font-weight: ${({ theme }) => theme.fontWeight.bold};
 
   &:hover {
