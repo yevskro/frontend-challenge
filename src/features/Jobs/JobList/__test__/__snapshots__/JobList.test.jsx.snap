@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+.c0 {
+  margin-bottom: 150px;
+}
+
+<ul
+  className="c0"
+>
+  <p>
+    test
+  </p>
+</ul>
+`;
