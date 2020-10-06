@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+Array [
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 32px;
+  margin: 10px 16px 10px 0px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: hsl(180,31%,95%);
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  padding: 0px 9px 0px 8px;
+  color: hsl(180,29%,50%);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.c1:hover {
+  color: white;
+  background-color: hsl(180,29%,50%);
+  cursor: pointer;
+}
+
+@media (min-width:415px) {
+  .c0 {
+    margin: 10px 0px 10px 16px;
+  }
+}
+
+<li
+    className="c0"
+  >
+    <span
+      className="c1"
+      onClick={[Function]}
+    >
+      CSS
+    </span>
+    
+  </li>,
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 32px;
+  margin: 10px 16px 10px 0px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: hsl(180,31%,95%);
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  padding: 0px 9px 0px 8px;
+  color: hsl(180,29%,50%);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.c1:hover {
+  color: hsl(180,29%,50%);
+  background-color: hsl(180,31%,95%);
+  cursor: auto;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 0px 5px 5px 0px;
+  background-color: hsl(180,29%,50%);
+}
+
+.c2:hover {
+  background-color: hsl(180,14%,20%);
+  cursor: pointer;
+}
+
+@media (min-width:415px) {
+  .c0 {
+    margin: 10px 0px 10px 16px;
+  }
+}
+
+<li
+    className="c0"
+  >
+    <span
+      className="c1"
+      onClick={[Function]}
+    >
+      HTML
+    </span>
+    <div
+      className="c2"
+      onClick={[Function]}
+    >
+      <img
+        alt="remove icon"
+        src="/assets/images/icon-remove.svg"
+      />
+    </div>
+  </li>,
+]
+`;
