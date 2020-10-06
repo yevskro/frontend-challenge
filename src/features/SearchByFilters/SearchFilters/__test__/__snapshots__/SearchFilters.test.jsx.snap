@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+Array [
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 32px;
+  margin: 10px 16px 10px 0px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: hsl(180,31%,95%);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  padding: 0px 9px 0px 8px;
+  color: hsl(180,29%,50%);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.c2:hover {
+  color: white;
+  background-color: hsl(180,29%,50%);
+  cursor: pointer;
+}
+
+@media (max-width:415px) {
+  .c0 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width:415px) {
+
+}
+
+@media (min-width:415px) {
+  .c1 {
+    margin: 10px 0px 10px 16px;
+  }
+}
+
+<ul
+    className="c0"
+  >
+    <li
+      className="c1"
+    >
+      <span
+        className="c2"
+        onClick={[Function]}
+      >
+        CSS
+      </span>
+      
+    </li>
+  </ul>,
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 32px;
+  margin: 10px 16px 10px 0px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: hsl(180,31%,95%);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  padding: 0px 9px 0px 8px;
+  color: hsl(180,29%,50%);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.c2:hover {
+  color: white;
+  background-color: hsl(180,29%,50%);
+  cursor: pointer;
+}
+
+@media (max-width:415px) {
+
+}
+
+@media (max-width:415px) {
+  .c0 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width:415px) {
+  .c1 {
+    margin: 10px 0px 10px 16px;
+  }
+}
+
+<ul
+    className="c0"
+  >
+    <li
+      className="c1"
+    >
+      <span
+        className="c2"
+        onClick={[Function]}
+      >
+        CSS
+      </span>
+      
+    </li>
+  </ul>,
+]
+`;
