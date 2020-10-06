@@ -2,11 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 function SearchClearButton({ onClick }) {
-  return (
-    <StyledSearchButton onClick={onClick} role="button">
-      Clear
-    </StyledSearchButton>
-  );
+  return <StyledSearchButton onClick={onClick}>Clear</StyledSearchButton>;
 }
 
 const StyledSearchButton = styled.button`
