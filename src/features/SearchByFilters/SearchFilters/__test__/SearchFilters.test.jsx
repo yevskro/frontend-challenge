@@ -1,26 +1,64 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
+import Theme from '../../../../shared/providers/Theme';
 import SearchFilters from '..';
 import SearchFilter from '../../SearchFilter';
 
-test('renders without crashing', () => {
-  const { getByRole } = render(<SearchFilters />);
-  const filtersElement = getByRole('listbox');
-  expect(filtersElement).toBeInTheDocument();
+test('renders', () => {
+  render(
+    <Theme>
+      <SearchFilters>
+        <SearchFilter>CSS</SearchFilter>
+      </SearchFilters>
+    </Theme>
+  );
+
+  expect(screen.getByText('CSS')).toBeInTheDocument();
 });
 
-test('renders children', () => {
-  const { getByRole } = render(
-    <SearchFilters>
-      <SearchFilter value="CSS" />
-    </SearchFilters>
+test('component default justification is to flex-start', () => {
+  render(
+    <Theme>
+      <SearchFilters>
+        <SearchFilter>CSS</SearchFilter>
+      </SearchFilters>
+    </Theme>
   );
-  const filterElement = getByRole('listitem');
-  expect(filterElement).toBeInTheDocument();
+
+  expect(screen.getByRole('list')).toHaveStyleRule(
+    'justify-content',
+    'flex-start'
+  );
+});
+
+test('component can adjust its justification to flex-end', () => {
+  render(
+    <Theme>
+      <SearchFilters flexEnd>
+        <SearchFilter>CSS</SearchFilter>
+      </SearchFilters>
+    </Theme>
+  );
+
+  expect(screen.getByRole('list')).toHaveStyleRule(
+    'justify-content',
+    'flex-end'
+  );
 });
 
 test('snapshot', async () => {
-  const tree = renderer.create(<SearchFilters />).toJSON();
+  const tree = renderer
+    .create(
+      <Theme>
+        <SearchFilters flexEnd>
+          <SearchFilter>CSS</SearchFilter>
+        </SearchFilters>
+        <SearchFilters>
+          <SearchFilter>CSS</SearchFilter>
+        </SearchFilters>
+      </Theme>
+    )
+    .toJSON();
   expect(tree).toMatchSnapshot();
 });
