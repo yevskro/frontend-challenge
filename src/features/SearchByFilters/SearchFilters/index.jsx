@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
+/* search filters has the ability to flex its children either to flex-end
+or flex-start */
 function SearchFilters({ children, flexEnd }) {
   return (
-    <StyledSearchFilters flexEnd={flexEnd} role="listbox">
-      {children}
-    </StyledSearchFilters>
+    <StyledSearchFilters flexEnd={flexEnd}>{children}</StyledSearchFilters>
   );
 }
 
