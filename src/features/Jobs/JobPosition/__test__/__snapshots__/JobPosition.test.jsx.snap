@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+.c7 {
+  white-space: nowrap;
+}
+
+.c7:first-child::before {
+  font-size: 1.7rem;
+  content: ' ';
+}
+
+.c7:not(:first-child)::before {
+  display: inline-block;
+  content: '.';
+  padding: 0px 4px 0px 4px;
+  font-size: 1.7rem;
+  -webkit-transform: translateY(-16%);
+  -ms-transform: translateY(-16%);
+  transform: translateY(-16%);
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: hsl(180,8%,52%);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.c2 {
+  height: 24px;
+  line-height: 26px;
+  vertical-align: middle;
+  padding: 0px 9px 0px 9px;
+  margin: 0px 4px 0px 4px;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.c3 {
+  margin-left: 18px;
+  background-color: hsl(180,29%,50%);
+  font-size: 0.7rem;
+}
+
+.c4 {
+  background-color: hsl(180,14%,20%);
+  font-size: 0.7rem;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 24px;
+  color: hsl(180,29%,50%);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.c5 {
+  padding: 11px 0px 11px 0px;
+  margin: 0px;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.c5:hover {
+  color: hsl(180,29%,50%);
+  cursor: pointer;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media (min-width:600px) {
+  .c7:not(:first-child)::before {
+    padding: 0px 8px 0px 8px;
+  }
+}
+
+@media (min-width:600px) {
+  .c7 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width:500px) {
+  .c1 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width:500px) {
+  .c0 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width:600px) {
+  .c0 {
+    font-size: 1.2rem;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <h6>
+      company name
+    </h6>
+    <span
+      className="c2 c3"
+    >
+      NEW!
+    </span>
+    <span
+      className="c2 c4"
+    >
+      FEATURED
+    </span>
+  </div>
+  <h3
+    className="c5"
+  >
+    position
+  </h3>
+  <ul
+    className="c6"
+  >
+    <li
+      className="c7"
+    >
+      posted at
+    </li>
+    <li
+      className="c7"
+    >
+      contract
+    </li>
+    <li
+      className="c7"
+    >
+      location
+    </li>
+  </ul>
+</div>
+`;
