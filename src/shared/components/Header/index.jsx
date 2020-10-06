@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 function Header() {
+  /* setting the image to a blank.gif gets rid of the border that would be
+  rendered if the src attribute is empty */
   return (
     <header role="presentation">
       <Image src="/assets/images/blank.gif" alt="header banner" />
