@@ -19,7 +19,7 @@ function App() {
 
 const StyledApp = styled.div`
   position: absolute;
-  z-index: 1; /* create a z-index our Job component will be stacked infront of it */
+  z-index: 1; /* create a z-index our Jobs component will be stacked infront of it */
   height: 100%;
   width: 100%;
   font-family: ${({ theme }) => theme.fontFamily};
