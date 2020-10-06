@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 function SearchClearButton({ onClick }) {
+  /* on click should call a method that is responsible for clearing the search filters */
   return <StyledSearchButton onClick={onClick}>Clear</StyledSearchButton>;
 }
 
