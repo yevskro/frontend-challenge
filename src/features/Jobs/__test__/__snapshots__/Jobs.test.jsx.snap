@@ -1,0 +1,645 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+.c3 {
+  text-align: center;
+  font-size: 1rem;
+  color: hsl(180,8%,52%);
+}
+
+.c3:hover {
+  color: hsl(180,29%,50%);
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 65px;
+  padding: 5px 26px 5px 21px;
+  margin-bottom: 56px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 10px 10px rgba(94,140,160,0.15);
+  visibility: hidden;
+}
+
+.c15 {
+  white-space: nowrap;
+}
+
+.c15:first-child::before {
+  font-size: 1.7rem;
+  content: ' ';
+}
+
+.c15:not(:first-child)::before {
+  display: inline-block;
+  content: '.';
+  padding: 0px 4px 0px 4px;
+  font-size: 1.7rem;
+  -webkit-transform: translateY(-16%);
+  -ms-transform: translateY(-16%);
+  transform: translateY(-16%);
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: hsl(180,8%,52%);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.c10 {
+  height: 24px;
+  line-height: 26px;
+  vertical-align: middle;
+  padding: 0px 9px 0px 9px;
+  margin: 0px 4px 0px 4px;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.c11 {
+  margin-left: 18px;
+  background-color: hsl(180,29%,50%);
+  font-size: 0.7rem;
+}
+
+.c12 {
+  background-color: hsl(180,14%,20%);
+  font-size: 0.7rem;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 24px;
+  color: hsl(180,29%,50%);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.c13 {
+  padding: 11px 0px 11px 0px;
+  margin: 0px;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.c13:hover {
+  color: hsl(180,29%,50%);
+  cursor: pointer;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 32px;
+  margin: 10px 16px 10px 0px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: hsl(180,31%,95%);
+}
+
+.c20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  padding: 0px 9px 0px 8px;
+  color: hsl(180,29%,50%);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.c20:hover {
+  color: white;
+  background-color: hsl(180,29%,50%);
+  cursor: pointer;
+}
+
+.c17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+.c16 {
+  opacity: 0.5;
+  margin: 0px 0px 4px 0px;
+  border-top: 1px solid hsl(180,8%,52%);
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.c7 {
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  -webkit-transform: translate(0px,-86px);
+  -ms-transform: translate(0px,-86px);
+  transform: translate(0px,-86px);
+}
+
+.c5 {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 40px;
+  padding: 44px 24px 14px 20px;
+  background-color: white;
+  border-radius: 5px;
+  border-left: 5px solid hsl(180,29%,50%);
+  box-shadow: 0px 10px 10px rgba(94,140,160,0.15);
+}
+
+.c4 {
+  margin-bottom: 150px;
+}
+
+.c0 {
+  position: absolute;
+  z-index: 2;
+  left: 5%;
+  right: 5%;
+  top: 120px;
+  background: transparent;
+}
+
+@media (min-width:600px) {
+  .c15:not(:first-child)::before {
+    padding: 0px 8px 0px 8px;
+  }
+}
+
+@media (min-width:600px) {
+  .c15 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width:500px) {
+  .c9 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width:500px) {
+  .c8 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width:600px) {
+  .c8 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width:415px) {
+  .c2 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width:415px) {
+  .c18 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width:415px) {
+  .c19 {
+    margin: 10px 0px 10px 16px;
+  }
+}
+
+@media (min-width:785px) {
+  .c16 {
+    display: none;
+  }
+}
+
+@media (min-width:785px) {
+  .c6 {
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width:555px) {
+  .c7 {
+    position: relative;
+    height: 88px;
+    width: 88px;
+    margin-right: 24px;
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    transform: translate(0,0);
+  }
+}
+
+@media (min-width:555px) {
+  .c5 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width:785px) {
+  .c5 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 24px 24px 24px 24px;
+  }
+}
+
+@media (min-width:900px) {
+  .c5 {
+    padding: 30px 48px 30px 48px;
+  }
+}
+
+@media (min-width:401px) {
+  .c0 {
+    left: 11%;
+    right: 11%;
+  }
+}
+
+<section
+  className="c0"
+  role="main"
+>
+  <div
+    className="c1"
+    role="search"
+  >
+    <ul
+      className="c2"
+    />
+    <button
+      className="c3"
+      onClick={[Function]}
+    >
+      Clear
+    </button>
+  </div>
+  <ul
+    className="c4"
+  >
+    <div
+      className="c5"
+      role="listitem"
+    >
+      <div
+        className="c6"
+      >
+        <img
+          alt="company logo"
+          className="c7"
+          src="/assets/images/photosnap.svg"
+        />
+        <div
+          className="c8"
+        >
+          <div
+            className="c9"
+          >
+            <h6>
+              Photosnap
+            </h6>
+            <span
+              className="c10 c11"
+            >
+              NEW!
+            </span>
+            <span
+              className="c10 c12"
+            >
+              FEATURED
+            </span>
+          </div>
+          <h3
+            className="c13"
+          >
+            Senior Frontend Developer
+          </h3>
+          <ul
+            className="c14"
+          >
+            <li
+              className="c15"
+            >
+              2d ago
+            </li>
+            <li
+              className="c15"
+            >
+              Part Time
+            </li>
+            <li
+              className="c15"
+            >
+              USA Only
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr
+        className="c16"
+      />
+      <div
+        className="c17"
+      >
+        <ul
+          className="c18"
+        >
+          <li
+            className="c19"
+          >
+            <span
+              className="c20"
+              onClick={[Function]}
+            >
+              Frontend
+            </span>
+            
+          </li>
+          <li
+            className="c19"
+          >
+            <span
+              className="c20"
+              onClick={[Function]}
+            >
+              Senior
+            </span>
+            
+          </li>
+          <li
+            className="c19"
+          >
+            <span
+              className="c20"
+              onClick={[Function]}
+            >
+              HTML
+            </span>
+            
+          </li>
+          <li
+            className="c19"
+          >
+            <span
+              className="c20"
+              onClick={[Function]}
+            >
+              CSS
+            </span>
+            
+          </li>
+          <li
+            className="c19"
+          >
+            <span
+              className="c20"
+              onClick={[Function]}
+            >
+              JavaScript
+            </span>
+            
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="c5"
+      role="listitem"
+    >
+      <div
+        className="c6"
+      >
+        <img
+          alt="company logo"
+          className="c7"
+          src="/assets/images/manage.svg"
+        />
+        <div
+          className="c8"
+        >
+          <div
+            className="c9"
+          >
+            <h6>
+              Manage
+            </h6>
+            <span
+              className="c10 c11"
+            >
+              NEW!
+            </span>
+            <span
+              className="c10 c12"
+            >
+              FEATURED
+            </span>
+          </div>
+          <h3
+            className="c13"
+          >
+            Fullstack Developer
+          </h3>
+          <ul
+            className="c14"
+          >
+            <li
+              className="c15"
+            >
+              1d ago
+            </li>
+            <li
+              className="c15"
+            >
+              Part Time
+            </li>
+            <li
+              className="c15"
+            >
+              Remote
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr
+        className="c16"
+      />
+      <div
+        className="c17"
+      >
+        <ul
+          className="c18"
+        >
+          <li
+            className="c19"
+          >
+            <span
+              className="c20"
+              onClick={[Function]}
+            >
+              Fullstack
+            </span>
+            
+          </li>
+          <li
+            className="c19"
+          >
+            <span
+              className="c20"
+              onClick={[Function]}
+            >
+              Midweight
+            </span>
+            
+          </li>
+          <li
+            className="c19"
+          >
+            <span
+              className="c20"
+              onClick={[Function]}
+            >
+              Python
+            </span>
+            
+          </li>
+          <li
+            className="c19"
+          >
+            <span
+              className="c20"
+              onClick={[Function]}
+            >
+              React
+            </span>
+            
+          </li>
+        </ul>
+      </div>
+    </div>
+  </ul>
+</section>
+`;
