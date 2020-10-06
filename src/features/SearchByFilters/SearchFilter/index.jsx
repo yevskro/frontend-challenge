@@ -8,8 +8,14 @@ function SearchFilter({
   onRemoveFilter,
   onAddFilter,
 }) {
+  /* a filter that is removeable should only handle an onClick
+  on the removing icon.
+    a filter that is addable shall not have the remove prop or
+    the prop would be set to false. this filter can be clickable
+    by the text content
+  */
   return (
-    <StyledSearchFilter role="listitem button">
+    <StyledSearchFilter>
       <Text
         onClick={remove ? () => {} : () => onAddFilter(filter)}
         remove={remove}
@@ -18,7 +24,7 @@ function SearchFilter({
       </Text>
       {remove ? (
         <Remove onClick={remove ? () => onRemoveFilter(filter) : () => {}}>
-          <RemoveIcon />
+          <img src="/assets/images/icon-remove.svg" alt="remove icon" />
         </Remove>
       ) : (
         ''
@@ -53,7 +59,7 @@ const Text = styled.span`
   font-weight: ${({ theme }) => theme.fontWeight.bold};
 
   &:hover {
-    /* only apply colors if this is a not applied filter */
+    /* only apply colors if this is a not removable filter */
     color: ${({ remove, theme }) =>
       remove ? theme.color.primary.desaturtedDarkCyan : 'white'};
     background-color: ${({ remove, theme }) =>
@@ -77,10 +83,6 @@ const Remove = styled.div`
     background-color: ${({ theme }) => theme.color.neutral.veryDarkGrayishCyan};
     cursor: pointer;
   }
-`;
-
-const RemoveIcon = styled.img`
-  content: url('/assets/images/icon-remove.svg');
 `;
 
 export default SearchFilter;
