@@ -2,8 +2,9 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import App from '..';
 
-test('renders without crashing', () => {
+test('renders', () => {
   const { getByRole } = render(<App />);
-  const appElement = getByRole('application');
-  expect(appElement).toBeInTheDocument();
+  expect(getByRole('application')).toBeInTheDocument();
+  expect(getByRole('img', { name: 'header banner' })).toBeInTheDocument();
+  expect(getByRole('main')).toBeInTheDocument();
 });
