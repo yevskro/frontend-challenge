@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+.c4 {
+  text-align: center;
+  font-size: 1rem;
+  color: hsl(180,8%,52%);
+}
+
+.c4:hover {
+  color: hsl(180,29%,50%);
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 65px;
+  padding: 5px 26px 5px 21px;
+  margin-bottom: 56px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 10px 10px rgba(94,140,160,0.15);
+  visibility: visible;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 32px;
+  margin: 10px 16px 10px 0px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: hsl(180,31%,95%);
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  padding: 0px 9px 0px 8px;
+  color: hsl(180,29%,50%);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.c3:hover {
+  color: white;
+  background-color: hsl(180,29%,50%);
+  cursor: pointer;
+}
+
+@media (max-width:415px) {
+  .c1 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width:415px) {
+  .c2 {
+    margin: 10px 0px 10px 16px;
+  }
+}
+
+<div
+  className="c0"
+  role="search"
+>
+  <ul
+    className="c1"
+  >
+    <li
+      className="c2"
+    >
+      <span
+        className="c3"
+        onClick={[Function]}
+      >
+        CSS
+      </span>
+      
+    </li>
+  </ul>
+  <button
+    className="c4"
+  >
+    Clear
+  </button>
+</div>
+`;
