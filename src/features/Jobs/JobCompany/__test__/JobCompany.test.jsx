@@ -1,70 +1,43 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
+import Theme from '../../../../shared/providers/Theme';
 import JobCompany from '..';
-import Theme from '../../../providers/Theme';
 
-test('renders without crashing', () => {
-  const { getByRole } = render(
+test('renders', () => {
+  render(
     <Theme>
-      <JobCompany />
+      <JobCompany newly featured>
+        Photosnap
+      </JobCompany>
     </Theme>
   );
 
-  const jobElement = getByRole('heading');
-  expect(jobElement).toBeInTheDocument();
+  expect(screen.getByText('Photosnap')).toBeInTheDocument();
+  expect(screen.getByText('NEW!')).toBeInTheDocument();
+  expect(screen.getByText('FEATURED')).toBeInTheDocument();
 });
 
-test('renders only company name', () => {
-  const { getByText } = render(
-    <Theme>
-      <JobCompany>Durran</JobCompany>
-    </Theme>
-  );
-
-  const jobElement = getByText('Durran');
-  expect(jobElement).toBeInTheDocument();
-});
-
-test('renders pills', async () => {
-  const { getAllByRole } = render(
-    <Theme>
-      <JobCompany newly featured />
-    </Theme>
-  );
-
-  const pillElements = getAllByRole('note');
-  expect(pillElements.length).toBe(2);
-  expect(pillElements[0].textContent).toStrictEqual('NEW!');
-  expect(pillElements[0]).toBeInTheDocument();
-  expect(pillElements[1].textContent).toStrictEqual('FEATURED');
-  expect(pillElements[1]).toBeInTheDocument();
-});
-
-test('renders featured pill', () => {
-  const { getAllByRole } = render(
-    <Theme>
-      <JobCompany featured />
-    </Theme>
-  );
-
-  const pillElements = getAllByRole('note');
-  expect(pillElements.length).toBe(1);
-  expect(pillElements[0].textContent).toStrictEqual('FEATURED');
-  expect(pillElements[0]).toBeInTheDocument();
-});
-
-test('renders newly pill', () => {
-  const { getAllByRole } = render(
+test('renders just newly pill', async () => {
+  render(
     <Theme>
       <JobCompany newly />
     </Theme>
   );
 
-  const pillElements = getAllByRole('note');
-  expect(pillElements.length).toBe(1);
-  expect(pillElements[0].textContent).toStrictEqual('NEW!');
-  expect(pillElements[0]).toBeInTheDocument();
+  expect(screen.getByText('NEW!')).toBeInTheDocument();
+  expect(screen.queryByText('FEATURED')).not.toBeInTheDocument();
+});
+
+test('renders featured pill', () => {
+  render(
+    <Theme>
+      <JobCompany featured />
+    </Theme>
+  );
+
+  expect(screen.queryByText('NEW!')).not.toBeInTheDocument();
+  expect(screen.getByText('FEATURED')).toBeInTheDocument();
 });
 
 test('snapshot', async () => {
