@@ -6,7 +6,7 @@ function Header() {
   rendered if the src attribute is empty */
   return (
     <header role="presentation">
-      <Image src="/assets/images/blank.gif" alt="header banner" />
+      <Image src="/assets/images/blank_image.gif" alt="header banner" />
     </header>
   );
 }
