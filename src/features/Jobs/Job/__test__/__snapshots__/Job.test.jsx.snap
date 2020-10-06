@@ -1,35 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`snapshot 1`] = `
-.c7 {
+.c10 {
   white-space: nowrap;
 }
 
-.c7:first-child::before {
+.c10:first-child::before {
   font-size: 1.7rem;
   content: ' ';
 }
 
-.c7:not(:first-child)::before {
-  content: '.';
+.c10:not(:first-child)::before {
   display: inline-block;
+  content: '.';
+  padding: 0px 4px 0px 4px;
+  font-size: 1.7rem;
   -webkit-transform: translateY(-16%);
   -ms-transform: translateY(-16%);
   transform: translateY(-16%);
-  padding-left: 4px;
-  padding-right: 4px;
-  font-size: 1.7rem;
 }
 
-.c6 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
   color: hsl(180,8%,52%);
   font-weight: 400;
   font-size: 0.9rem;
+}
+
+.c5 {
+  height: 24px;
+  line-height: 26px;
+  vertical-align: middle;
+  padding: 0px 9px 0px 9px;
+  margin: 0px 4px 0px 4px;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.c6 {
+  margin-left: 18px;
+  background-color: hsl(180,29%,50%);
+  font-size: 0.7rem;
+}
+
+.c7 {
+  background-color: hsl(180,14%,20%);
+  font-size: 0.7rem;
 }
 
 .c4 {
@@ -37,22 +57,26 @@ exports[`snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  color: #5eaaa6;
-  font-weight: 600;
-  height: 24px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  height: 24px;
+  color: hsl(180,29%,50%);
+  font-weight: 600;
   font-size: 0.8rem;
 }
 
-.c5 {
-  padding-top: 11px;
-  padding-bottom: 11px;
-  font-weight: 600;
+.c8 {
+  padding: 11px 0px 11px 0px;
   margin: 0px;
   white-space: nowrap;
+  font-weight: 600;
+}
+
+.c8:hover {
+  color: hsl(180,29%,50%);
+  cursor: pointer;
 }
 
 .c3 {
@@ -65,7 +89,7 @@ exports[`snapshot 1`] = `
   flex-direction: column;
 }
 
-.c10 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -80,8 +104,7 @@ exports[`snapshot 1`] = `
   justify-content: flex-end;
 }
 
-.c11 {
-  height: 32px;
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -94,18 +117,36 @@ exports[`snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: hsl(180,31%,95%);
+  height: 32px;
   margin: 10px 16px 10px 0px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: hsl(180,31%,95%);
 }
 
-.c12 {
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
   padding: 0px 9px 0px 8px;
   color: hsl(180,29%,50%);
   font-size: 0.9rem;
   font-weight: 600;
 }
 
-.c9 {
+.c15:hover {
+  color: white;
+  background-color: hsl(180,29%,50%);
+  cursor: pointer;
+}
+
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -117,10 +158,10 @@ exports[`snapshot 1`] = `
   margin-left: auto;
 }
 
-.c8 {
-  border-top: 1px solid hsl(180,8%,52%);
+.c11 {
   opacity: 0.5;
   margin: 0px 0px 4px 0px;
+  border-top: 1px solid hsl(180,8%,52%);
 }
 
 .c1 {
@@ -136,37 +177,33 @@ exports[`snapshot 1`] = `
 }
 
 .c2 {
-  width: 48px;
-  height: 48px;
   position: absolute;
-  -webkit-transform: translate( 0px, -86px );
-  -ms-transform: translate( 0px, -86px );
-  transform: translate( 0px, -86px );
+  height: 48px;
+  width: 48px;
+  -webkit-transform: translate(0px,-86px);
+  -ms-transform: translate(0px,-86px);
+  transform: translate(0px,-86px);
 }
 
 .c0 {
   box-sizing: border-box;
-  border-radius: 5px;
-  border-left: 5px solid white;
-  background-color: white;
-  box-shadow: 0px 10px 10px rgba(94,140,160,0.15);
-  margin-top: 40px;
   width: 100%;
-  padding-bottom: 14px;
-  padding-left: 20px;
-  padding-right: 24px;
-  padding-top: 44px;
+  margin-top: 40px;
+  padding: 44px 24px 14px 20px;
+  background-color: white;
+  border-radius: 5px;
+  border-left: 5px solid hsl(180,29%,50%);
+  box-shadow: 0px 10px 10px rgba(94,140,160,0.15);
 }
 
 @media (min-width:600px) {
-  .c7:not(:first-child)::before {
-    padding-left: 8px;
-    padding-right: 8px;
+  .c10:not(:first-child)::before {
+    padding: 0px 8px 0px 8px;
   }
 }
 
 @media (min-width:600px) {
-  .c7 {
+  .c10 {
     font-size: 1rem;
   }
 }
@@ -190,7 +227,7 @@ exports[`snapshot 1`] = `
 }
 
 @media (max-width:415px) {
-  .c10 {
+  .c13 {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
@@ -199,13 +236,13 @@ exports[`snapshot 1`] = `
 }
 
 @media (min-width:415px) {
-  .c11 {
+  .c14 {
     margin: 10px 0px 10px 16px;
   }
 }
 
 @media (min-width:785px) {
-  .c8 {
+  .c11 {
     display: none;
   }
 }
@@ -213,25 +250,23 @@ exports[`snapshot 1`] = `
 @media (min-width:785px) {
   .c1 {
     padding-bottom: 0px;
-    padding-left: 0px;
   }
 }
 
 @media (min-width:555px) {
   .c2 {
-    width: 88px;
-    height: 88px;
     position: relative;
+    height: 88px;
+    width: 88px;
+    margin-right: 24px;
     -webkit-transform: translate(0,0);
     -ms-transform: translate(0,0);
     transform: translate(0,0);
-    margin-right: 24px;
   }
 }
 
 @media (min-width:555px) {
   .c0 {
-    padding-top: 20px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -239,6 +274,7 @@ exports[`snapshot 1`] = `
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    padding-top: 20px;
   }
 }
 
@@ -248,13 +284,13 @@ exports[`snapshot 1`] = `
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
     padding: 24px 24px 24px 24px;
   }
 }
@@ -267,7 +303,7 @@ exports[`snapshot 1`] = `
 
 <div
   className="c0"
-  role="article listitem"
+  role="listitem"
 >
   <div
     className="c1"
@@ -275,88 +311,113 @@ exports[`snapshot 1`] = `
     <img
       alt="company logo"
       className="c2"
+      src="/assets/images/photosnap.svg"
     />
     <div
       className="c3"
     >
       <div
         className="c4"
-        role="heading"
       >
-        
-        
+        <h6>
+          Photosnap
+        </h6>
+        <span
+          className="c5 c6"
+        >
+          NEW!
+        </span>
+        <span
+          className="c5 c7"
+        >
+          FEATURED
+        </span>
       </div>
       <h3
-        className="c5"
-      />
+        className="c8"
+      >
+        Senior Frontend Developer
+      </h3>
       <ul
-        className="c6"
-        role="list"
+        className="c9"
       >
         <li
-          className="c7"
-          role="listitem"
-        />
+          className="c10"
+        >
+          2d ago
+        </li>
         <li
-          className="c7"
-          role="listitem"
-        />
+          className="c10"
+        >
+          Part Time
+        </li>
         <li
-          className="c7"
-          role="listitem"
-        />
+          className="c10"
+        >
+          USA Only
+        </li>
       </ul>
     </div>
   </div>
   <hr
-    className="c8"
+    className="c11"
   />
   <div
-    className="c9"
+    className="c12"
   >
     <ul
-      className="c10"
-      role="listbox"
+      className="c13"
     >
       <li
-        className="c11"
-        role="listitem button"
+        className="c14"
       >
         <span
-          className="c12"
+          className="c15"
+          onClick={[Function]}
         >
           Frontend
         </span>
         
       </li>
       <li
-        className="c11"
-        role="listitem button"
+        className="c14"
       >
         <span
-          className="c12"
+          className="c15"
+          onClick={[Function]}
         >
-          Junior
+          Senior
         </span>
         
       </li>
       <li
-        className="c11"
-        role="listitem button"
+        className="c14"
       >
         <span
-          className="c12"
+          className="c15"
+          onClick={[Function]}
+        >
+          HTML
+        </span>
+        
+      </li>
+      <li
+        className="c14"
+      >
+        <span
+          className="c15"
+          onClick={[Function]}
         >
           CSS
         </span>
         
       </li>
       <li
-        className="c11"
-        role="listitem button"
+        className="c14"
       >
         <span
-          className="c12"
+          className="c15"
+          onClick={[Function]}
         >
           JavaScript
         </span>
