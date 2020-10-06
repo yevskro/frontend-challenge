@@ -2,21 +2,19 @@
 
 exports[`snapshot 1`] = `
 .c1 {
+  height: 24px;
   line-height: 26px;
   vertical-align: middle;
-  height: 24px;
-  padding-left: 9px;
-  padding-right: 9px;
+  padding: 0px 9px 0px 9px;
+  margin: 0px 4px 0px 4px;
   color: white;
   border-radius: 20px;
-  margin-left: 4px;
-  margin-right: 4px;
   font-size: 0.9rem;
 }
 
 .c2 {
-  background-color: hsl(180,29%,50%);
   margin-left: 18px;
+  background-color: hsl(180,29%,50%);
   font-size: 0.7rem;
 }
 
@@ -30,13 +28,13 @@ exports[`snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  color: #5eaaa6;
-  font-weight: 600;
-  height: 24px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  height: 24px;
+  color: hsl(180,29%,50%);
+  font-weight: 600;
   font-size: 0.8rem;
 }
 
@@ -48,18 +46,17 @@ exports[`snapshot 1`] = `
 
 <div
   className="c0"
-  role="heading"
 >
-  Durran
+  <h6>
+    Durran
+  </h6>
   <span
     className="c1 c2"
-    role="note"
   >
     NEW!
   </span>
   <span
     className="c1 c3"
-    role="note"
   >
     FEATURED
   </span>
