@@ -5,36 +5,59 @@ import SearchFilters from '../../SearchByFilters/SearchFilters';
 import SearchFilter from '../../SearchByFilters/SearchFilter';
 
 function Job({ data, onAddFilter }) {
-  // role, level, languages is an array, tools is an array
-  const jsxFilters = [];
+  function jsxFilters() {
+    /* creates SearchFilters based on data information */
+    const filters = [];
 
-  jsxFilters.push(
-    <SearchFilter onAddFilter={onAddFilter} filter={{ role: data.role }}>
-      {data.role}
-    </SearchFilter>
-  );
-  jsxFilters.push(
-    <SearchFilter onAddFilter={onAddFilter} filter={{ level: data.level }}>
-      {data.level}
-    </SearchFilter>
-  );
-  data.languages.forEach((language) => {
-    jsxFilters.push(
-      <SearchFilter onAddFilter={onAddFilter} filter={{ languages: language }}>
-        {language}
+    filters.push(
+      <SearchFilter
+        onAddFilter={onAddFilter}
+        filter={{ role: data.role }}
+        key={`job-item-filter-${data.role}`}
+      >
+        {data.role}
       </SearchFilter>
     );
-  });
-  data.tools.forEach((tool) => {
-    jsxFilters.push(
-      <SearchFilter onAddFilter={onAddFilter} filter={{ tools: tool }}>
-        {tool}
+
+    filters.push(
+      <SearchFilter
+        onAddFilter={onAddFilter}
+        filter={{ level: data.level }}
+        key={`job-item-filter-${data.level}`}
+      >
+        {data.level}
       </SearchFilter>
     );
-  });
+
+    data.languages.forEach((language) => {
+      filters.push(
+        <SearchFilter
+          onAddFilter={onAddFilter}
+          filter={{ languages: language }}
+          key={`job-item-filter-${language}`}
+        >
+          {language}
+        </SearchFilter>
+      );
+    });
+
+    data.tools.forEach((tool) => {
+      filters.push(
+        <SearchFilter
+          onAddFilter={onAddFilter}
+          filter={{ tools: tool }}
+          key={`job-item-filter-${tool}`}
+        >
+          {tool}
+        </SearchFilter>
+      );
+    });
+
+    return filters;
+  }
 
   return (
-    <StyledJob featured={data.featured} role="article listitem">
+    <StyledJob featured={data.featured} role="listitem">
       <JobInformation>
         <CompanyLogo src={data.logo} alt="company logo" />
         <JobPosition
@@ -52,7 +75,7 @@ function Job({ data, onAddFilter }) {
       </JobInformation>
       <HorizontalLine />
       <JobFilters>
-        <SearchFilters flexEnd>{jsxFilters}</SearchFilters>
+        <SearchFilters flexEnd>{jsxFilters()}</SearchFilters>
       </JobFilters>
     </StyledJob>
   );
@@ -69,6 +92,7 @@ const HorizontalLine = styled.hr`
   margin: 0px 0px 4px 0px;
   border-top: 1px solid ${({ theme }) => theme.color.neutral.darkGrayishCyan};
   @media (min-width: 785px) {
+    /* desktop view */
     display: none;
   }
 `;
@@ -78,6 +102,7 @@ const JobInformation = styled.div`
   align-items: center;
   padding-bottom: 10px;
   @media (min-width: 785px) {
+    /* desktop view */
     padding-bottom: 0px;
   }
 `;
@@ -86,8 +111,12 @@ const CompanyLogo = styled.img`
   position: absolute;
   height: 48px;
   width: 48px;
-  transform: translate(0px, -86px);
+  transform: translate(
+    0px,
+    -86px
+  ); /* translate the icon to align half way above the container top border */
   @media (min-width: 555px) {
+    /* tablet view */
     position: relative;
     height: 88px;
     width: 88px;
@@ -109,12 +138,14 @@ const StyledJob = styled.div`
   box-shadow: 0px 10px 10px ${({ theme }) => theme.color.shadow};
 
   @media (min-width: 555px) {
+    /* tablet view */
     display: flex;
     flex-direction: column;
     padding-top: 20px;
   }
 
   @media (min-width: 785px) {
+    /* desktop view */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -122,6 +153,7 @@ const StyledJob = styled.div`
   }
 
   @media (min-width: 900px) {
+    /* fits it nicer on a bigger desktop view */
     padding: 30px 48px 30px 48px;
   }
 `;
