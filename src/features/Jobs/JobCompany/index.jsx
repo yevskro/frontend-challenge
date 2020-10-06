@@ -3,17 +3,18 @@ import styled from 'styled-components';
 
 function JobCompany({ children, newly, featured }) {
   return (
-    <StyledJobCompany role="heading">
-      {children}
-      {newly ? <PrimaryPill role="note">NEW!</PrimaryPill> : ''}
-      {featured ? <SecondaryPill role="note">FEATURED</SecondaryPill> : ''}
+    <StyledJobCompany>
+      <h6>{children}</h6>
+      {/* should include the company name */}
+      {newly ? <PrimaryPill>NEW!</PrimaryPill> : ''}
+      {featured ? <SecondaryPill>FEATURED</SecondaryPill> : ''}
     </StyledJobCompany>
   );
 }
 
 const Pill = styled.span`
   height: 24px;
-  line-height: 26px; /* helps to centers the content properly */
+  line-height: 26px; /* helps to center the content properly */
   vertical-align: middle;
   padding: 0px 9px 0px 9px;
   margin: 0px 4px 0px 4px;
@@ -41,6 +42,7 @@ const StyledJobCompany = styled.div`
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   font-size: ${({ theme }) => theme.fontSize.xsmall};
   @media (min-width: 500px) {
+    /* tablet view */
     font-size: ${({ theme }) => theme.fontSize.small};
   }
 `;
