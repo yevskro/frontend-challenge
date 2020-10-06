@@ -1,3 +1,8 @@
+# website is currently deployed at http://glean-project.s3-website-us-east-1.amazonaws.com/ 
+## to spin this up
+    - yarn install
+    - yarn start
+  
 # Frontend Mentor - Job Listings Challenge
 
 ![Design preview for the Job Listings coding challenge](./design/desktop-preview.jpg)

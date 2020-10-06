@@ -1,8 +1,3 @@
-# website is currently deployed at http://glean-project.s3-website-us-east-1.amazonaws.com/ 
-## to spin this up
-    - yarn install
-    - yarn start
-    
 # Front-end Style Guide
 
 ## Layout
