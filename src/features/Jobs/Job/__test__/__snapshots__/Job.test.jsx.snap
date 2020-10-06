@@ -32,7 +32,7 @@ exports[`snapshot 1`] = `
 
 .c5 {
   height: 24px;
-  line-height: 26px;
+  line-height: 27px;
   vertical-align: middle;
   padding: 0px 9px 0px 9px;
   margin: 0px 4px 0px 4px;
@@ -180,9 +180,9 @@ exports[`snapshot 1`] = `
   position: absolute;
   height: 48px;
   width: 48px;
-  -webkit-transform: translate(0px,-86px);
-  -ms-transform: translate(0px,-86px);
-  transform: translate(0px,-86px);
+  -webkit-transform: translate( 0px, -86px );
+  -ms-transform: translate( 0px, -86px );
+  transform: translate( 0px, -86px );
 }
 
 .c0 {
@@ -338,6 +338,7 @@ exports[`snapshot 1`] = `
       >
         Senior Frontend Developer
       </h3>
+       
       <ul
         className="c9"
       >

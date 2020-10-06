@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+.c0 {
+  height: 156px;
+  width: 100%;
+  background-color: hsl(180,29%,50%);
+  background-image: url('/assets/images/bg-header-mobile.svg');
+}
+
+@media (min-width:376px) {
+  .c0 {
+    background-image: url('/assets/images/bg-header-desktop.svg');
+  }
+}
+
+<header
+  role="presentation"
+>
+  <img
+    alt="header banner"
+    className="c0"
+    src="/assets/images/blank_image.gif"
+  />
+</header>
+`;
