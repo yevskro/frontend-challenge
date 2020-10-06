@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-/* theme developed based on the spec */
+/* theme developed based on the style-guide */
 const theme = {
   color: {
     primary: {
