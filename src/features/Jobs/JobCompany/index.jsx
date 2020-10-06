@@ -14,7 +14,7 @@ function JobCompany({ children, newly, featured }) {
 
 const Pill = styled.span`
   height: 24px;
-  line-height: 26px; /* helps to center the content properly */
+  line-height: 27px; /* helps to center the content properly */
   vertical-align: middle;
   padding: 0px 9px 0px 9px;
   margin: 0px 4px 0px 4px;
