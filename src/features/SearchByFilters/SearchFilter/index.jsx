@@ -23,7 +23,7 @@ function SearchFilter({
         {children}
       </Text>
       {remove ? (
-        <Remove onClick={remove ? () => onRemoveFilter(filter) : () => {}}>
+        <Remove onClick={() => onRemoveFilter(filter)}>
           <img src="/assets/images/icon-remove.svg" alt="remove icon" />
         </Remove>
       ) : (
