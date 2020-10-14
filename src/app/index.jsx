@@ -18,7 +18,7 @@ function App() {
 }
 
 const StyledApp = styled.div`
-  position: absolute;
+  position: relative;
   z-index: 1; /* create a z-index our Jobs component will be stacked infront of it */
   height: 100%;
   width: 100%;
