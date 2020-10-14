@@ -78,15 +78,13 @@ const StyledJobs = styled.section`
   /* this will stack to the front */
   position: relative;
   z-index: 2;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 0 5% 0 5%;
   top: -40px;
   background: transparent;
 
   @media (min-width: 401px) {
     /* gives it a tighter feel */
-    margin-left: 11%;
-    margin-right: 11%;
+    margin: 0 11% 0 11%;
   }
 `;
 
